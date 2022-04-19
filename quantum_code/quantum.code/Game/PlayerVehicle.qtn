@@ -1,0 +1,10 @@
+struct Movement
+{
+    FP linear;
+    FP angular;
+}
+
+component PlayerVehicle
+{
+  Movement movement;
+}

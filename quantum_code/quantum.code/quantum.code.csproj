@@ -71,6 +71,9 @@
   <ItemGroup>
     <EmbeddedResource Include="db.json" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Game\PlayerVehicle.qtn" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent Condition="'$(OS)' == 'Windows_NT'">"$(ProjectDir)..\..\tools\codegen_unity\quantum.codegen.unity.host.exe" "$(TargetDir)\quantum.code.dll" "$(ProjectDir)..\..\quantum_unity\Assets"</PostBuildEvent>
