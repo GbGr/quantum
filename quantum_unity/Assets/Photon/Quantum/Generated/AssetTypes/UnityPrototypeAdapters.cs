@@ -6,6 +6,32 @@
 using System;
 namespace Quantum.Prototypes.Unity {
   [System.SerializableAttribute()]
+  [Quantum.Prototypes.PrototypeAttribute(typeof(Quantum.PlayerVehicle))]
+  public class PlayerVehicle_Prototype : Quantum.PrototypeAdapter<Quantum.Prototypes.PlayerVehicle_Prototype> {
+    public Quantum.Prototypes.Movement_Prototype movement;
+    [Quantum.LocalReference]
+    public global::EntityPrototype chassis;
+    [Quantum.LocalReference]
+    public global::EntityPrototype wheel_fl;
+    [Quantum.LocalReference]
+    public global::EntityPrototype wheel_fr;
+    [Quantum.LocalReference]
+    public global::EntityPrototype wheel_rr;
+    [Quantum.LocalReference]
+    public global::EntityPrototype wheel_rl;
+
+    public sealed override Quantum.Prototypes.PlayerVehicle_Prototype Convert(EntityPrototypeConverter converter) {
+      var result = new Quantum.Prototypes.PlayerVehicle_Prototype();
+      result.movement = this.movement;
+      converter.Convert(this.chassis, out result.chassis);
+      converter.Convert(this.wheel_fl, out result.wheel_fl);
+      converter.Convert(this.wheel_fr, out result.wheel_fr);
+      converter.Convert(this.wheel_rr, out result.wheel_rr);
+      converter.Convert(this.wheel_rl, out result.wheel_rl);
+      return result;
+    }
+  }
+  [System.SerializableAttribute()]
   [Quantum.Prototypes.PrototypeAttribute(typeof(Quantum.PhysicsJoints3D))]
   public class PhysicsJoints3D_Prototype : Quantum.PrototypeAdapter<Quantum.Prototypes.PhysicsJoints3D_Prototype> {
     [Quantum.Inspector.DynamicCollectionAttribute()]

@@ -7,4 +7,9 @@ struct Movement
 component PlayerVehicle
 {
   Movement movement;
+  EntityRef chassis;
+  EntityRef wheel_fl;
+  EntityRef wheel_fr;
+  EntityRef wheel_rr;
+  EntityRef wheel_rl;
 }

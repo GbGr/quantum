@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Quantum.Game;
 
 namespace Quantum {
   public static class SystemSetup {
@@ -14,7 +15,7 @@ namespace Quantum {
         
         new Core.PhysicsSystem2D(),
         new Core.PhysicsSystem3D(),
-
+        
         Core.DebugCommand.CreateSystem(),
 
         new Core.NavigationSystem(),
@@ -22,6 +23,8 @@ namespace Quantum {
         new Core.PlayerConnectedSystem(),
 
         // user systems go here 
+        
+        new VehicleSystem()
       };
     }
   }
