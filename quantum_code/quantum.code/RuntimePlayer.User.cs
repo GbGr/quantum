@@ -1,14 +1,17 @@
-﻿using Photon.Deterministic;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿#region
 
-namespace Quantum {
-  partial class RuntimePlayer {
+using Photon.Deterministic;
+
+#endregion
+
+namespace Quantum;
+
+partial class RuntimePlayer
+{
+    public AssetRefEntityPrototype playerPrototype;
+    
     partial void SerializeUserData(BitStream stream)
     {
-      // implementation
+        stream.Serialize(ref playerPrototype.Id);
     }
-  }
 }

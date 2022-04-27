@@ -46,8 +46,18 @@ MonoBehaviour:
         Id:
           Value: 167245961817396670
       ResourcePath: DB/Map1_mesh
+    - Path: Resources/DB/Prefabs/BoxEntity|EntityPrototype
+      AssetRef:
+        Id:
+          Value: 724801671849601603
+      ResourcePath: DB/Prefabs/BoxEntity
     - Path: Resources/DB/Map1
       AssetRef:
         Id:
           Value: 1710471675203725834
       ResourcePath: DB/Map1
+    - Path: Resources/DB/Prefabs/BoxEntity|EntityView
+      AssetRef:
+        Id:
+          Value: 4236185604747764270
+      ResourcePath: DB/Prefabs/BoxEntity
