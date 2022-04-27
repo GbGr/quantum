@@ -92,8 +92,10 @@ GameObject:
   - component: {fileID: 4058225407240951344}
   - component: {fileID: 5854595377089834721}
   - component: {fileID: 7382464947111901438}
+  - component: {fileID: 4609584608348772820}
+  - component: {fileID: -8335374253744262689}
   m_Layer: 0
-  m_Name: BoxEntity
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -292,6 +294,37 @@ MonoBehaviour:
   OnEntityDestroyed:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &4609584608348772820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2952122678855116813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37f06cd0adcc24144a6434dcd83ee612, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Prototype:
+    PlayerRef:
+      _index: 0
+--- !u!114 &-8335374253744262689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2952122678855116813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d40818ad888adc3439499bab0a827f5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Prototype:
+    Config:
+      Id:
+        Value: 4
 --- !u!1 &6067897249756275851
 GameObject:
   m_ObjectHideFlags: 0
@@ -384,11 +417,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0120b722c3ca5454da1240b65656905f, type: 3}
-  m_Name: BoxEntityEntityPrototype
+  m_Name: PlayerEntityPrototype
   m_EditorClassIdentifier: 
   Settings:
     Identifier:
-      Path: Resources/DB/Prefabs/BoxEntity|EntityPrototype
+      Path: Resources/DB/Prefabs/Player|EntityPrototype
       Guid:
         Value: 724801671849601603
   Parent: {fileID: 5854595377089834721}
@@ -402,11 +435,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4d5baec4de8d2754a864a680181831e8, type: 3}
-  m_Name: BoxEntityEntityView
+  m_Name: PlayerEntityView
   m_EditorClassIdentifier: 
   Settings:
     Identifier:
-      Path: Resources/DB/Prefabs/BoxEntity|EntityView
+      Path: Resources/DB/Prefabs/Player|EntityView
       Guid:
         Value: 4236185604747764270
   Parent: {fileID: 7382464947111901438}

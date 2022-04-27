@@ -23,5 +23,8 @@ public class SpawnPlayerSystem : SystemSignalsOnly, ISignalOnPlayerConnected
 
         var transform = f.Unsafe.GetPointer<Transform3D>(playerEntity);
         transform->Position = position;
+
+        var playerLink = f.Unsafe.GetPointer<PlayerLink>(playerEntity);
+        playerLink->PlayerRef = player;
     }
 }

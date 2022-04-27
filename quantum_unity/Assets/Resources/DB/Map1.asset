@@ -245,7 +245,8 @@ MonoBehaviour:
       MutableMode: 0
     MapEntities: []
   Prototypes:
-  - PlayerVehicle: []
+  - PlayerLink: []
+    PlayerVehicle: []
     SpawnPoint:
     - Index: 0
     CharacterController2D: []
@@ -262,11 +263,26 @@ MonoBehaviour:
     PhysicsCallbacks3D: []
     Transform2D: []
     Transform2DVertical: []
-    Transform3D: []
+    Transform3D:
+    - Position:
+        X:
+          RawValue: -190054
+        Y:
+          RawValue: 0
+        Z:
+          RawValue: 218234
+      Rotation:
+        X:
+          RawValue: 0
+        Y:
+          RawValue: 0
+        Z:
+          RawValue: 0
     View: []
     PhysicsJoints2D: []
     PhysicsJoints3D: []
-  - PlayerVehicle: []
+  - PlayerLink: []
+    PlayerVehicle: []
     SpawnPoint:
     - Index: 1
     CharacterController2D: []
@@ -283,11 +299,26 @@ MonoBehaviour:
     PhysicsCallbacks3D: []
     Transform2D: []
     Transform2DVertical: []
-    Transform3D: []
+    Transform3D:
+    - Position:
+        X:
+          RawValue: 186777
+        Y:
+          RawValue: 0
+        Z:
+          RawValue: 215613
+      Rotation:
+        X:
+          RawValue: 0
+        Y:
+          RawValue: 0
+        Z:
+          RawValue: 0
     View: []
     PhysicsJoints2D: []
     PhysicsJoints3D: []
-  - PlayerVehicle: []
+  - PlayerLink: []
+    PlayerVehicle: []
     SpawnPoint:
     - Index: 2
     CharacterController2D: []
@@ -304,11 +335,26 @@ MonoBehaviour:
     PhysicsCallbacks3D: []
     Transform2D: []
     Transform2DVertical: []
-    Transform3D: []
+    Transform3D:
+    - Position:
+        X:
+          RawValue: 198574
+        Y:
+          RawValue: 0
+        Z:
+          RawValue: -192020
+      Rotation:
+        X:
+          RawValue: 0
+        Y:
+          RawValue: 0
+        Z:
+          RawValue: 0
     View: []
     PhysicsJoints2D: []
     PhysicsJoints3D: []
-  - PlayerVehicle: []
+  - PlayerLink: []
+    PlayerVehicle: []
     SpawnPoint:
     - Index: 3
     CharacterController2D: []
@@ -325,7 +371,21 @@ MonoBehaviour:
     PhysicsCallbacks3D: []
     Transform2D: []
     Transform2DVertical: []
-    Transform3D: []
+    Transform3D:
+    - Position:
+        X:
+          RawValue: -156631
+        Y:
+          RawValue: 0
+        Z:
+          RawValue: -213647
+      Rotation:
+        X:
+          RawValue: 0
+        Y:
+          RawValue: 0
+        Z:
+          RawValue: 0
     View: []
     PhysicsJoints2D: []
     PhysicsJoints3D: []
