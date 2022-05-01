@@ -74,6 +74,7 @@
     <EmbeddedResource Include="db.json" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Game\FirePoint.qtn" />
     <Content Include="Game\PlayerVehicle.qtn" />
     <Content Include="QTN\PlayerInput.qtn" />
     <Content Include="QTN\PlayerLink.qtn" />
