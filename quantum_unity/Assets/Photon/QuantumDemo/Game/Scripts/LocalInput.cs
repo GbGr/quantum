@@ -18,10 +18,12 @@ public class LocalInput : MonoBehaviour
     {
         var x = UnityEngine.Input.GetAxis("Horizontal");
         var y = UnityEngine.Input.GetAxis("Vertical");
+        var fire = UnityEngine.Input.GetButton("Fire1");
         
         var i = new Input()
         {
-            Movement = new FPVector2(x.ToFP(), y.ToFP())
+            Movement = new FPVector2(x.ToFP(), y.ToFP()),
+            Fire = fire
         };
         
         callback.SetInput(i, DeterministicInputFlags.Repeatable);

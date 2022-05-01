@@ -29,6 +29,7 @@ namespace Quantum.Editor {
     [System.Serializable]
     public partial class KnownObjectsContainer : QuantumEditorUtility.SerializableObjectsContainerBase {
       public Quantum.SimulationConfig[] SimulationConfig = {};
+      public Quantum.Pistol[] Pistol = {};
       public Quantum.BinaryData[] BinaryData = {};
       public Quantum.CharacterController2DConfig[] CharacterController2DConfig = {};
       public Quantum.CharacterController3DConfig[] CharacterController3DConfig = {};

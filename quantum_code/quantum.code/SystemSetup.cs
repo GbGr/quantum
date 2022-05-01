@@ -24,7 +24,12 @@ namespace Quantum {
 
         // user systems go here 
         new SpawnPlayerSystem(),
+        new ProcessPlayerFireInput(),
         new PlayerMovement(),
+        
+        new ShootingSystem(),
+        
+        new DestroyOnCollisionSystem()
       };
     }
   }

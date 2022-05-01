@@ -62,8 +62,13 @@
     <Compile Include="Core\Core.cs" />
     <Compile Include="Frame.User.cs" />
     <Compile Include="FrameContext.User.cs" />
+    <Compile Include="Gameplay\DestroyOnCollisionSystem.cs" />
     <Compile Include="Gameplay\PlayerMovement.cs" />
+    <Compile Include="Gameplay\ProcessPlayerFireInput.cs" />
+    <Compile Include="Gameplay\ShootingSystem.cs" />
     <Compile Include="Gameplay\SpawnPlayerSystem.cs" />
+    <Compile Include="Game\Configs\Guns\GunConfig.User.cs" />
+    <Compile Include="Game\Configs\Guns\Pistol.cs" />
     <Compile Include="RuntimeConfig.User.cs" />
     <Compile Include="RuntimePlayer.User.cs" />
     <Compile Include="SimulationConfig.User.cs" />
@@ -74,8 +79,11 @@
     <EmbeddedResource Include="db.json" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Game\Configs\Guns\GunConfig.qtn" />
+    <Content Include="Game\DestroyOnCollision.qtn" />
     <Content Include="Game\FirePoint.qtn" />
     <Content Include="Game\PlayerVehicle.qtn" />
+    <Content Include="Game\Shooting.qtn" />
     <Content Include="QTN\PlayerInput.qtn" />
     <Content Include="QTN\PlayerLink.qtn" />
     <Content Include="QTN\SpawnPoint.qtn" />

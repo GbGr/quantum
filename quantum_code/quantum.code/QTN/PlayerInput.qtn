@@ -1,4 +1,5 @@
 input
 {
     FPVector2 Movement;
+    button Fire;
 }

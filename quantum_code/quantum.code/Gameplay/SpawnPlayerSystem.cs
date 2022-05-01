@@ -26,5 +26,8 @@ public class SpawnPlayerSystem : SystemSignalsOnly, ISignalOnPlayerConnected
 
         var playerLink = f.Unsafe.GetPointer<PlayerLink>(playerEntity);
         playerLink->PlayerRef = player;
+
+        // var shooting = f.Unsafe.GetPointer<Shooting>(playerEntity);
+        // shooting->GunConfig = f.FindAsset<GunConfig>("Resources/DB/Configs/Guns/Pistol");
     }
 }

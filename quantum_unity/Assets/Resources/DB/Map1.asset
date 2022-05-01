@@ -71,7 +71,7 @@ MonoBehaviour:
       StaticData:
         Name: Floor
         Tag: Untagged
-        Layer: 0
+        Layer: 8
         Asset:
           Id:
             Value: 0
@@ -112,7 +112,7 @@ MonoBehaviour:
       StaticData:
         Name: Wall
         Tag: Untagged
-        Layer: 0
+        Layer: 8
         Asset:
           Id:
             Value: 0
@@ -153,7 +153,7 @@ MonoBehaviour:
       StaticData:
         Name: Wall (1)
         Tag: Untagged
-        Layer: 0
+        Layer: 8
         Asset:
           Id:
             Value: 0
@@ -194,7 +194,7 @@ MonoBehaviour:
       StaticData:
         Name: Wall (2)
         Tag: Untagged
-        Layer: 0
+        Layer: 8
         Asset:
           Id:
             Value: 0
@@ -235,7 +235,7 @@ MonoBehaviour:
       StaticData:
         Name: Wall (3)
         Tag: Untagged
-        Layer: 0
+        Layer: 8
         Asset:
           Id:
             Value: 0
@@ -245,8 +245,11 @@ MonoBehaviour:
       MutableMode: 0
     MapEntities: []
   Prototypes:
-  - PlayerLink: []
+  - DestroyOnCollision: []
+    FirePoint: []
+    PlayerLink: []
     PlayerVehicle: []
+    Shooting: []
     SpawnPoint:
     - Index: 0
     CharacterController2D: []
@@ -268,7 +271,7 @@ MonoBehaviour:
         X:
           RawValue: -190054
         Y:
-          RawValue: 0
+          RawValue: 65536
         Z:
           RawValue: 218234
       Rotation:
@@ -281,8 +284,11 @@ MonoBehaviour:
     View: []
     PhysicsJoints2D: []
     PhysicsJoints3D: []
-  - PlayerLink: []
+  - DestroyOnCollision: []
+    FirePoint: []
+    PlayerLink: []
     PlayerVehicle: []
+    Shooting: []
     SpawnPoint:
     - Index: 1
     CharacterController2D: []
@@ -304,7 +310,7 @@ MonoBehaviour:
         X:
           RawValue: 186777
         Y:
-          RawValue: 0
+          RawValue: 65536
         Z:
           RawValue: 215613
       Rotation:
@@ -317,8 +323,11 @@ MonoBehaviour:
     View: []
     PhysicsJoints2D: []
     PhysicsJoints3D: []
-  - PlayerLink: []
+  - DestroyOnCollision: []
+    FirePoint: []
+    PlayerLink: []
     PlayerVehicle: []
+    Shooting: []
     SpawnPoint:
     - Index: 2
     CharacterController2D: []
@@ -340,7 +349,7 @@ MonoBehaviour:
         X:
           RawValue: 198574
         Y:
-          RawValue: 0
+          RawValue: 65536
         Z:
           RawValue: -192020
       Rotation:
@@ -353,8 +362,11 @@ MonoBehaviour:
     View: []
     PhysicsJoints2D: []
     PhysicsJoints3D: []
-  - PlayerLink: []
+  - DestroyOnCollision: []
+    FirePoint: []
+    PlayerLink: []
     PlayerVehicle: []
+    Shooting: []
     SpawnPoint:
     - Index: 3
     CharacterController2D: []
@@ -376,7 +388,7 @@ MonoBehaviour:
         X:
           RawValue: -156631
         Y:
-          RawValue: 0
+          RawValue: 65536
         Z:
           RawValue: -213647
       Rotation:

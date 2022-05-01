@@ -51,11 +51,26 @@ MonoBehaviour:
         Id:
           Value: 724801671849601603
       ResourcePath: DB/Prefabs/Player
+    - Path: Resources/DB/Prefabs/Bullet|EntityPrototype
+      AssetRef:
+        Id:
+          Value: 1046624227084454946
+      ResourcePath: DB/Prefabs/Bullet
     - Path: Resources/DB/Map1
       AssetRef:
         Id:
           Value: 1710471675203725834
       ResourcePath: DB/Map1
+    - Path: Resources/DB/Prefabs/Bullet|EntityView
+      AssetRef:
+        Id:
+          Value: 2646283264455162794
+      ResourcePath: DB/Prefabs/Bullet
+    - Path: Resources/DB/Configs/Guns/Pistol
+      AssetRef:
+        Id:
+          Value: 3689982966121486436
+      ResourcePath: DB/Configs/Guns/Pistol
     - Path: Resources/DB/Prefabs/Player|EntityView
       AssetRef:
         Id:

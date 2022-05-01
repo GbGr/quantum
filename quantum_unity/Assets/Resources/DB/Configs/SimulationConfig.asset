@@ -101,6 +101,9 @@ MonoBehaviour:
       - 
       - Water
       - UI
+      - Player
+      - Bullet
+      - Environment
       - 
       - 
       - 
@@ -124,10 +127,7 @@ MonoBehaviour:
       - 
       - 
       - 
-      - 
-      - 
-      - 
-      LayerMatrix: fffefffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffeffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+      LayerMatrix: 08feffff08feffff08feffffffffffff08feffff08feffff48ffffff08ffffffc8ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
     Entities:
       CommitCommandsMode: 0
       DefaultEntityCapacity: 1024

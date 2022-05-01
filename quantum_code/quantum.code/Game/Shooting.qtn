@@ -1,0 +1,7 @@
+component Shooting
+{
+    bool IsShooting;
+    FP Cooldown;
+    
+    asset_ref<GunConfig> GunConfig;
+}
