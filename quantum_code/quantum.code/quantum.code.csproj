@@ -69,6 +69,7 @@
     <Compile Include="Gameplay\SpawnPlayerSystem.cs" />
     <Compile Include="Game\Configs\Guns\GunConfig.User.cs" />
     <Compile Include="Game\Configs\Guns\Pistol.cs" />
+    <Compile Include="Game\Configs\Guns\Shotgun.cs" />
     <Compile Include="RuntimeConfig.User.cs" />
     <Compile Include="RuntimePlayer.User.cs" />
     <Compile Include="SimulationConfig.User.cs" />

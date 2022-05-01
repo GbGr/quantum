@@ -56,6 +56,11 @@ MonoBehaviour:
         Id:
           Value: 1046624227084454946
       ResourcePath: DB/Prefabs/Bullet
+    - Path: Resources/DB/Configs/Guns/Shotgun
+      AssetRef:
+        Id:
+          Value: 1489371442627965396
+      ResourcePath: DB/Configs/Guns/Shotgun
     - Path: Resources/DB/Map1
       AssetRef:
         Id:

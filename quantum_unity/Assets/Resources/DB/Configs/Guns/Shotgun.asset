@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5b5cb6f7dea7bb478df75c834254b58, type: 3}
+  m_Name: Shotgun
+  m_EditorClassIdentifier: 
+  Settings:
+    Identifier:
+      Path: Resources/DB/Configs/Guns/Shotgun
+      Guid:
+        Value: 1489371442627965396
+    Ammo:
+      Id:
+        Value: 1046624227084454946
+    FireCooldown:
+      RawValue: 65536
+    AmmoSpeed:
+      RawValue: 655360
+    BulletAmount:
+      RawValue: 327680
+    Angle:
+      RawValue: 3932160
