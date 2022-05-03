@@ -14,6 +14,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Photon/QuantumDemo/Game/Game.unity
     guid: 03bd5ba32b9950244a08f22579187d8b
+  - enabled: 1
+    path: Assets/Level_01.unity
+    guid: eb6125a740701a64bb7e7a3110e92f55
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 8012c229df5d8f84683449de40029a6b,
       type: 2}

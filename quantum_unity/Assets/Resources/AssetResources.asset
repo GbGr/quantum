@@ -71,6 +71,11 @@ MonoBehaviour:
         Id:
           Value: 2646283264455162794
       ResourcePath: DB/Prefabs/Bullet
+    - Path: Resources/DB/MyLevel/Level_01_map
+      AssetRef:
+        Id:
+          Value: 2740727927691710077
+      ResourcePath: DB/MyLevel/Level_01_map
     - Path: Resources/DB/Configs/Guns/Pistol
       AssetRef:
         Id:
@@ -81,3 +86,8 @@ MonoBehaviour:
         Id:
           Value: 4236185604747764270
       ResourcePath: DB/Prefabs/Player
+    - Path: Resources/DB/MyLevel/Level_01_map_mesh
+      AssetRef:
+        Id:
+          Value: 4243816968339509413
+      ResourcePath: DB/MyLevel/Level_01_map_mesh
