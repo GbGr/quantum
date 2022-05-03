@@ -9,7 +9,9 @@ using UnityEngine;
 public abstract unsafe class EntityViewComponent<T> : MonoBehaviour
     where T : unmanaged, IComponent
 {
-    public EntityView MyView { get; private set; }
+    [SerializeField] private EntityView myView;
+
+    public EntityView MyView => myView;
     public QuantumGame MyGame { get; private set; }
 
     public EntityRef MyRef => MyView.EntityRef;
@@ -26,7 +28,16 @@ public abstract unsafe class EntityViewComponent<T> : MonoBehaviour
 
     private void Awake()
     {
-        MyView = GetComponent<EntityView>();
+        if (!myView)
+        {
+            myView = GetComponent<EntityView>();
+        }
+        
         MyGame = QuantumRunner.Default.Game;
+    }
+
+    private void OnValidate()
+    {
+        myView = GetComponent<EntityView>();
     }
 }
