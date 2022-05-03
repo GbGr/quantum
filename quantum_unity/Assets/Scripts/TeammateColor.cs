@@ -6,9 +6,9 @@ using UnityEngine;
 
 #endregion
 
-public class TeammateColor : MonoBehaviour
+[RequireComponent(typeof(EntityComponentTeammate))]
+public class TeammateColor : EntityViewComponent<Teammate>
 {
-    [SerializeField] private EntityView myView;
     [SerializeField] private MeshRenderer meshRenderer;
 
     private readonly Dictionary<TeamKey, Color> teamColors = new Dictionary<TeamKey, Color>
@@ -19,9 +19,6 @@ public class TeammateColor : MonoBehaviour
 
     private unsafe void Start()
     {
-        var f = QuantumRunner.Default.Game.Frames.Predicted;
-        var teammate = f.Unsafe.GetPointer<Teammate>(myView.EntityRef);
-
-        meshRenderer.material.color = teamColors[teammate->Team];
+        meshRenderer.material.color = teamColors[QComponent->Team];
     }
 }

@@ -178,8 +178,8 @@ GameObject:
   - component: {fileID: -8335374253744262689}
   - component: {fileID: 2893542059244486060}
   - component: {fileID: 428403747820778743}
-  - component: {fileID: 5496974744852813610}
-  - component: {fileID: 8586726844276137210}
+  - component: {fileID: 5874694417629745350}
+  - component: {fileID: 2890872771861829614}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -453,7 +453,7 @@ MonoBehaviour:
     GunConfig:
       Id:
         Value: 1489371442627965396
---- !u!114 &5496974744852813610
+--- !u!114 &5874694417629745350
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -468,7 +468,7 @@ MonoBehaviour:
   Prototype:
     Team:
       Value: 0
---- !u!114 &8586726844276137210
+--- !u!114 &2890872771861829614
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -480,7 +480,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c61c7c205a34ff147945dc1a2f40754f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myView: {fileID: 7382464947111901438}
   meshRenderer: {fileID: 609652394627828779}
 --- !u!1 &6067897249756275851
 GameObject:
