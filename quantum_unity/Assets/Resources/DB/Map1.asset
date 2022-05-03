@@ -252,6 +252,7 @@ MonoBehaviour:
     Shooting: []
     SpawnPoint:
     - Index: 0
+    Teammate: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -291,6 +292,7 @@ MonoBehaviour:
     Shooting: []
     SpawnPoint:
     - Index: 1
+    Teammate: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -330,6 +332,7 @@ MonoBehaviour:
     Shooting: []
     SpawnPoint:
     - Index: 2
+    Teammate: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -369,6 +372,7 @@ MonoBehaviour:
     Shooting: []
     SpawnPoint:
     - Index: 3
+    Teammate: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []

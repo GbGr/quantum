@@ -1,0 +1,10 @@
+﻿enum TeamKey
+{
+    Red,
+    Blue
+}
+
+component Teammate
+{
+    TeamKey Team;
+}

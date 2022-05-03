@@ -586,6 +586,11 @@ MonoBehaviour:
   - playerPrototype:
       Id:
         Value: 724801671849601603
+    myTeam: 0
+  - playerPrototype:
+      Id:
+        Value: 724801671849601603
+    myTeam: 1
   PreloadAddressables: 0
   DynamicAssetDB:
     OnInitialDynamicAssetsRequested:

@@ -88,6 +88,7 @@
     <Content Include="QTN\PlayerInput.qtn" />
     <Content Include="QTN\PlayerLink.qtn" />
     <Content Include="QTN\SpawnPoint.qtn" />
+    <Content Include="QTN\Team.qtn" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

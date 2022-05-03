@@ -29,5 +29,8 @@ public class SpawnPlayerSystem : SystemSignalsOnly, ISignalOnPlayerConnected
 
         // var shooting = f.Unsafe.GetPointer<Shooting>(playerEntity);
         // shooting->GunConfig = f.FindAsset<GunConfig>("Resources/DB/Configs/Guns/Pistol");
+
+        var teammate = f.Unsafe.GetPointer<Teammate>(playerEntity);
+        teammate->Team = playerData.myTeam;
     }
 }
