@@ -32,11 +32,7 @@ public class ShooterConnector : ShooterClientCallbacks, IConnectionCallbacks
         var runtimeConfigSO = RuntimeConfigSO.GetInstance();
         var mapGuid = runtimeConfigSO.Config.Map.Id.Value;
         var customProps = new Hashtable { { "m", mapGuid } };
-        var joinRandomParams = new OpJoinRandomRoomParams
-        {
-            ExpectedMaxPlayers = (byte)4,
-            ExpectedCustomRoomProperties = customProps
-        };
+        var joinRandomParams = new OpJoinRandomRoomParams();
 
         var enterRoomParams = new EnterRoomParams
         {

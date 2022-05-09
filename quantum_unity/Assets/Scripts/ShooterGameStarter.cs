@@ -36,7 +36,7 @@ public class ShooterGameStarter : ShooterClientCallbacks, IMatchmakingCallbacks
             StartGameTimeoutInSeconds = 10.0f
         };
 
-        QuantumRunner.StartGame("IgorTime", param);
+        QuantumRunner.StartGame("IgorTime" + Random.value, param);
         
         gameStartBtn.gameObject.SetActive(false);
     }
