@@ -2,9 +2,9 @@
 
 namespace Quantum.Gameplay;
 
-public class SpawnPlayerSystem : SystemSignalsOnly, ISignalOnPlayerConnected
+public class SpawnPlayerSystem : SystemSignalsOnly, ISignalOnPlayerDataSet
 {
-    public void OnPlayerConnected(Frame f, PlayerRef player)
+    public void OnPlayerDataSet(Frame f, PlayerRef player)
     {
         var filter = f.Filter<SpawnPoint, Transform3D>();
         while (filter.Next( out var entityRef, out var spawnPoint, out var transform))
