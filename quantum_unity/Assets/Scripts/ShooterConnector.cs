@@ -29,14 +29,7 @@ public class ShooterConnector : ShooterClientCallbacks, IConnectionCallbacks
     {
         Debug.Log($"{nameof(OnConnectedToMaster)}");
 
-        var allRuntimeConfigs = Resources.FindObjectsOfTypeAll<RuntimeConfigSO>();
-        if (allRuntimeConfigs.Length == 0)
-        {
-            return;
-        }
-        
-        var runtimeConfigSO = allRuntimeConfigs[0];
-
+        var runtimeConfigSO = RuntimeConfigSO.GetInstance();
         var mapGuid = runtimeConfigSO.Config.Map.Id.Value;
         var customProps = new Hashtable { { "m", mapGuid } };
         var joinRandomParams = new OpJoinRandomRoomParams

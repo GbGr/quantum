@@ -1,9 +1,11 @@
 #region
 
 using System.Collections.Generic;
+using Photon.Deterministic;
 using Photon.Realtime;
+using Quantum;
 using UnityEngine;
-using UnityEngine.UI;
+using Button = UnityEngine.UI.Button;
 
 #endregion
 
@@ -18,7 +20,25 @@ public class ShooterGameStarter : ShooterClientCallbacks, IMatchmakingCallbacks
 
     private void OnStartGameClicked()
     {
-        // START GAME
+        var config = RuntimeConfigSO.GetInstance().Config;
+        var param = new QuantumRunner.StartParameters
+        {
+            RuntimeConfig = config,
+            DeterministicConfig = DeterministicSessionConfigAsset.Instance.Config,
+            ReplayProvider = null,
+            GameMode = DeterministicGameMode.Multiplayer,
+            FrameData = null,
+            InitialFrame = 0,
+            PlayerCount = 4,
+            LocalPlayerCount = 1,
+            RecordingFlags = RecordingFlags.None,
+            NetworkClient = ShooterClient.Client,
+            StartGameTimeoutInSeconds = 10.0f
+        };
+
+        QuantumRunner.StartGame("IgorTime", param);
+        
+        gameStartBtn.gameObject.SetActive(false);
     }
 
     public void OnFriendListUpdate(List<FriendInfo> friendList)
