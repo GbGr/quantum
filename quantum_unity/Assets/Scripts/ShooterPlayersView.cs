@@ -45,7 +45,8 @@ public class ShooterPlayersView : ShooterClientCallbacks,
         var str = string.Empty;
         foreach (var playerKV in room.Players)
         {
-            str += $"Player ({playerKV.Key}): {playerKV.Value.NickName} - {playerKV.Value.UserId} \n";
+            var player = playerKV.Value;
+            str += $"Player ({player.ActorNumber}): {player.UserId} - isMaster:{player.IsMasterClient} \n";
         }
 
         textField.enabled = !string.IsNullOrEmpty(str);

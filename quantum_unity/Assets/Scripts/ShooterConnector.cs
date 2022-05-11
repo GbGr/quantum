@@ -39,7 +39,8 @@ public class ShooterConnector : ShooterClientCallbacks, IConnectionCallbacks
             RoomOptions = new RoomOptions
             {
                 MaxPlayers = (byte)4,
-                CustomRoomProperties = customProps
+                CustomRoomProperties = customProps,
+                PublishUserId = true
             }
         };
 

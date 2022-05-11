@@ -1,6 +1,7 @@
 #region
 
 using System.Collections.Generic;
+using ExitGames.Client.Photon;
 using Photon.Deterministic;
 using Photon.Realtime;
 using Quantum;
@@ -9,7 +10,9 @@ using Button = UnityEngine.UI.Button;
 
 #endregion
 
-public class ShooterGameStarter : ShooterClientCallbacks, IMatchmakingCallbacks
+public class ShooterGameStarter : ShooterClientCallbacks, 
+                                  IMatchmakingCallbacks,
+                                  IOnEventCallback
 {
     [SerializeField] private Button gameStartBtn;
 
@@ -19,6 +22,15 @@ public class ShooterGameStarter : ShooterClientCallbacks, IMatchmakingCallbacks
     }
 
     private void OnStartGameClicked()
+    {
+        gameStartBtn.gameObject.SetActive(false);
+
+        var options = new RaiseEventOptions { Receivers = ReceiverGroup.All };
+        var code = ShooterEventCode.StartGame;
+        ShooterClient.Client.OpRaiseEvent((byte)code, null, options, SendOptions.SendReliable);
+    }
+
+    private void StartGame()
     {
         var config = RuntimeConfigSO.GetInstance().Config;
         var param = new QuantumRunner.StartParameters
@@ -37,8 +49,6 @@ public class ShooterGameStarter : ShooterClientCallbacks, IMatchmakingCallbacks
         };
 
         QuantumRunner.StartGame("IgorTime" + Random.value, param);
-        
-        gameStartBtn.gameObject.SetActive(false);
     }
 
     public void OnFriendListUpdate(List<FriendInfo> friendList)
@@ -48,7 +58,8 @@ public class ShooterGameStarter : ShooterClientCallbacks, IMatchmakingCallbacks
     public void OnCreatedRoom()
     {
         Debug.Log($"{nameof(OnCreatedRoom)}");
-        gameStartBtn.gameObject.SetActive(true);
+
+        EnableStartGameBtnIfMaster();
     }
 
     public void OnCreateRoomFailed(short returnCode, string message)
@@ -59,7 +70,14 @@ public class ShooterGameStarter : ShooterClientCallbacks, IMatchmakingCallbacks
     public void OnJoinedRoom()
     {
         Debug.Log($"{nameof(OnJoinedRoom)}");
-        gameStartBtn.gameObject.SetActive(true);
+
+        EnableStartGameBtnIfMaster();
+    }
+
+    private void EnableStartGameBtnIfMaster()
+    {
+        var isMaster = ShooterClient.Client.LocalPlayer.IsMasterClient;
+        gameStartBtn.gameObject.SetActive(isMaster);
     }
 
     public void OnJoinRoomFailed(short returnCode, string message)
@@ -75,5 +93,16 @@ public class ShooterGameStarter : ShooterClientCallbacks, IMatchmakingCallbacks
     public void OnLeftRoom()
     {
         Debug.Log($"{nameof(OnLeftRoom)}");
+    }
+
+    public void OnEvent(EventData photonEvent)
+    {
+        var code = (ShooterEventCode)photonEvent.Code;
+        switch (code)
+        {
+            case ShooterEventCode.StartGame:
+                StartGame();
+                break;
+        }
     }
 }
