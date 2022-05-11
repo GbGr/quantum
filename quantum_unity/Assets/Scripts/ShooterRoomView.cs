@@ -19,9 +19,15 @@ public class ShooterRoomView : ShooterClientCallbacks, IMatchmakingCallbacks
             textField.gameObject.SetActive(false);
             return;
         }
-        
+
+        var room = ShooterClient.Client.CurrentRoom;
         textField.gameObject.SetActive(true);
-        textField.text = "Room: " + ShooterClient.Client.CurrentRoom.Name;
+        textField.text = "Room: " + room.Name;
+
+        foreach (var kv in room.CustomProperties)
+        {
+            textField.text += $"\nProp: {kv.Key} - {kv.Value}";
+        }
     }
 
     public void OnFriendListUpdate(List<FriendInfo> friendList)

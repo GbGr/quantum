@@ -8,6 +8,9 @@ public class ShooterConnector : ShooterClientCallbacks, IConnectionCallbacks
 {
     [SerializeField] private Button ConnectBtn;
 
+    private const string MAP_CODE = "m"; 
+    private const string RANK_CODE = "r"; 
+    
     private void Awake()
     {
         ConnectBtn.onClick.AddListener(OnConnectBtnClicked);
@@ -31,22 +34,30 @@ public class ShooterConnector : ShooterClientCallbacks, IConnectionCallbacks
 
         var runtimeConfigSO = RuntimeConfigSO.GetInstance();
         var mapGuid = runtimeConfigSO.Config.Map.Id.Value;
-        var customProps = new Hashtable { { "m", mapGuid } };
-        var joinRandomParams = new OpJoinRandomRoomParams();
+        var customProps = new Hashtable
+        {
+            { MAP_CODE, mapGuid },
+            { RANK_CODE, PlayerRankView.Rank },
+        };
 
+        var joinRandomParams = new OpJoinRandomRoomParams()
+        {
+            ExpectedCustomRoomProperties = customProps,
+        };
+            
         var enterRoomParams = new EnterRoomParams
         {
             RoomOptions = new RoomOptions
             {
                 MaxPlayers = (byte)4,
                 CustomRoomProperties = customProps,
+                CustomRoomPropertiesForLobby = new [] {MAP_CODE, RANK_CODE},
                 PublishUserId = true
             }
         };
 
         Debug.Log("Starting random matchmaking");
         ShooterClient.Client.OpJoinRandomOrCreateRoom(joinRandomParams, enterRoomParams);
-        // ShooterClient.Client.OpCreateRoom(enterRoomParams);
     }
 
     public void OnDisconnected(DisconnectCause cause)
