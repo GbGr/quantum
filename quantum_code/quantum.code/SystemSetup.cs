@@ -27,6 +27,7 @@ namespace Quantum {
         new BotSpawnSystem(),
         new ProcessPlayerFireInput(),
         new PlayerMovement(),
+        new AIRunSystem(),
         
         new ShootingSystem(),
         

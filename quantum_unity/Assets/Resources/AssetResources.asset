@@ -61,11 +61,6 @@ MonoBehaviour:
         Id:
           Value: 724801671849601603
       ResourcePath: DB/Prefabs/Player
-    - Path: Resources/DB/CircuitExport/HFSM_Assets/SimpleBot|NewState_0
-      AssetRef:
-        Id:
-          Value: 864953687564972243
-      ResourcePath: DB/CircuitExport/HFSM_Assets/SimpleBot
     - Path: Resources/DB/Prefabs/Bullet|EntityPrototype
       AssetRef:
         Id:
@@ -91,10 +86,10 @@ MonoBehaviour:
         Id:
           Value: 1710471675203725834
       ResourcePath: DB/Map1
-    - Path: Resources/DB/CircuitExport/HFSM_Assets/SimpleBot|NewState1_1
+    - Path: Resources/DB/CircuitExport/HFSM_Assets/SimpleBot|NewState_0
       AssetRef:
         Id:
-          Value: 1929103295886964565
+          Value: 2389795383037670329
       ResourcePath: DB/CircuitExport/HFSM_Assets/SimpleBot
     - Path: Resources/DB/Prefabs/Bullet|EntityView
       AssetRef:
@@ -126,3 +121,8 @@ MonoBehaviour:
         Id:
           Value: 4243816968339509413
       ResourcePath: DB/MyLevel/Level_01_map_mesh
+    - Path: Resources/DB/CircuitExport/HFSM_Assets/SimpleBot|DebugAction_0
+      AssetRef:
+        Id:
+          Value: 4329848861328770665
+      ResourcePath: DB/CircuitExport/HFSM_Assets/SimpleBot
