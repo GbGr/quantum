@@ -4,6 +4,9 @@ public class BotSpawnSystem : SystemSignalsOnly
 {
     private const string BOT_PROTOTYPE_PATH = 
         "Resources/DB/Prefabs/EnemyBot|EntityPrototype";
+
+    private const string BB_INITIALIZER_PATH = 
+        "Resources/DB/CircuitExport/Blackboard_Assets/SimpleBotBlackboardInitializer";
     
     public override unsafe void OnInit(Frame f)
     {
@@ -15,5 +18,9 @@ public class BotSpawnSystem : SystemSignalsOnly
         
         var botTransform = f.Unsafe.GetPointer<Transform3D>(botEntity);
         botTransform->Position = spawnTransform.Position;
+
+        var bbInitializer = f.FindAsset<AIBlackboardInitializer>(BB_INITIALIZER_PATH);
+        var bb = f.Unsafe.GetPointer<AIBlackboardComponent>(botEntity);
+        AIBlackboardInitializer.InitializeBlackboard(f, bb, bbInitializer);
     }
 }
