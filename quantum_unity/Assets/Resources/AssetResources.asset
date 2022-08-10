@@ -46,16 +46,41 @@ MonoBehaviour:
         Id:
           Value: 167245961817396670
       ResourcePath: DB/Map1_mesh
+    - Path: Resources/DB/CircuitExport/HFSM_Assets/SimpleBot
+      AssetRef:
+        Id:
+          Value: 351279636556756410
+      ResourcePath: DB/CircuitExport/HFSM_Assets/SimpleBot
+    - Path: Resources/DB/Prefabs/EnemyBot|EntityPrototype
+      AssetRef:
+        Id:
+          Value: 619496324313206207
+      ResourcePath: DB/Prefabs/EnemyBot
     - Path: Resources/DB/Prefabs/Player|EntityPrototype
       AssetRef:
         Id:
           Value: 724801671849601603
       ResourcePath: DB/Prefabs/Player
+    - Path: Resources/DB/CircuitExport/HFSM_Assets/SimpleBot|NewState_0
+      AssetRef:
+        Id:
+          Value: 864953687564972243
+      ResourcePath: DB/CircuitExport/HFSM_Assets/SimpleBot
     - Path: Resources/DB/Prefabs/Bullet|EntityPrototype
       AssetRef:
         Id:
           Value: 1046624227084454946
       ResourcePath: DB/Prefabs/Bullet
+    - Path: Resources/DB/CircuitExport/Blackboard_Assets/SimpleBotBlackboard
+      AssetRef:
+        Id:
+          Value: 1322532420179996495
+      ResourcePath: DB/CircuitExport/Blackboard_Assets/SimpleBotBlackboard
+    - Path: Resources/DB/CircuitExport/Blackboard_Assets/SimpleBotBlackboardInitializer
+      AssetRef:
+        Id:
+          Value: 1356846517101102878
+      ResourcePath: DB/CircuitExport/Blackboard_Assets/SimpleBotBlackboardInitializer
     - Path: Resources/DB/Configs/Guns/Shotgun
       AssetRef:
         Id:
@@ -66,6 +91,11 @@ MonoBehaviour:
         Id:
           Value: 1710471675203725834
       ResourcePath: DB/Map1
+    - Path: Resources/DB/CircuitExport/HFSM_Assets/SimpleBot|NewState1_1
+      AssetRef:
+        Id:
+          Value: 1929103295886964565
+      ResourcePath: DB/CircuitExport/HFSM_Assets/SimpleBot
     - Path: Resources/DB/Prefabs/Bullet|EntityView
       AssetRef:
         Id:
@@ -76,6 +106,11 @@ MonoBehaviour:
         Id:
           Value: 2740727927691710077
       ResourcePath: DB/MyLevel/Level_01_map
+    - Path: Resources/DB/Prefabs/EnemyBot|EntityView
+      AssetRef:
+        Id:
+          Value: 2798896845451685865
+      ResourcePath: DB/Prefabs/EnemyBot
     - Path: Resources/DB/Configs/Guns/Pistol
       AssetRef:
         Id:
