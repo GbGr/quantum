@@ -1,0 +1,8 @@
+﻿component WayPointsContainer
+{
+    list<EntityRef> WayPoints;
+}
+
+component WayPoint
+{
+}

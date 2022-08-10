@@ -62,6 +62,19 @@ namespace Quantum.Prototypes.Unity {
     }
   }
   [System.SerializableAttribute()]
+  [Quantum.Prototypes.PrototypeAttribute(typeof(Quantum.WayPointsContainer))]
+  public class WayPointsContainer_Prototype : Quantum.PrototypeAdapter<Quantum.Prototypes.WayPointsContainer_Prototype> {
+    [Quantum.Inspector.DynamicCollectionAttribute()]
+    [Quantum.LocalReference]
+    public global::EntityPrototype[] WayPoints = System.Array.Empty<global::EntityPrototype>();
+
+    public sealed override Quantum.Prototypes.WayPointsContainer_Prototype Convert(EntityPrototypeConverter converter) {
+      var result = new Quantum.Prototypes.WayPointsContainer_Prototype();
+      result.WayPoints = System.Array.ConvertAll(this.WayPoints, x => { converter.Convert(x, out Quantum.MapEntityId tmp); return tmp; });
+      return result;
+    }
+  }
+  [System.SerializableAttribute()]
   [Quantum.Prototypes.PrototypeAttribute(typeof(Quantum.PhysicsJoints3D))]
   public class PhysicsJoints3D_Prototype : Quantum.PrototypeAdapter<Quantum.Prototypes.PhysicsJoints3D_Prototype> {
     [Quantum.Inspector.DynamicCollectionAttribute()]

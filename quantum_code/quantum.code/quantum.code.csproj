@@ -197,7 +197,11 @@
     <Content Include="QTN\PlayerInput.qtn" />
     <Content Include="QTN\PlayerLink.qtn" />
     <Content Include="QTN\SpawnPoint.qtn" />
+    <Content Include="QTN\SpawnPoints.qtn" />
     <Content Include="QTN\Team.qtn" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SimpleBot\Actions" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
