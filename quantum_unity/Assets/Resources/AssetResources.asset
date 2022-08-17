@@ -106,6 +106,16 @@ MonoBehaviour:
         Id:
           Value: 2307849585476873016
       ResourcePath: DB/CircuitExport/HFSM_Assets/SimpleBot
+    - Path: Resources/DB/MyLevel/Level_01_map_Navmesh_data
+      AssetRef:
+        Id:
+          Value: 2339793481026765247
+      ResourcePath: DB/MyLevel/Level_01_map_Navmesh_data
+    - Path: Resources/DB/MyLevel/Level_01_map_Navmesh
+      AssetRef:
+        Id:
+          Value: 2616712437739034392
+      ResourcePath: DB/MyLevel/Level_01_map_Navmesh
     - Path: Resources/DB/Prefabs/Bullet|EntityView
       AssetRef:
         Id:

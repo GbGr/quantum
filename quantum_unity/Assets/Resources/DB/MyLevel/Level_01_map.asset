@@ -34,7 +34,9 @@ MonoBehaviour:
     GridSizeX: 32
     GridSizeY: 32
     GridNodeSize: 4
-    NavMeshLinks: []
+    NavMeshLinks:
+    - Id:
+        Value: 2616712437739034392
     Regions: []
     StaticColliders2D: []
     StaticColliders3D:
