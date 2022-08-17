@@ -174,6 +174,9 @@
     <Compile Include="RuntimeConfig.User.cs" />
     <Compile Include="RuntimePlayer.User.cs" />
     <Compile Include="SimulationConfig.User.cs" />
+    <Compile Include="SompleBot\Actions\MoveToWayPoint.cs" />
+    <Compile Include="SompleBot\Actions\SetNextWayPoint.cs" />
+    <Compile Include="SompleBot\Decisions\WayPointReached.cs" />
     <Compile Include="SystemSetup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -201,9 +204,6 @@
     <Content Include="QTN\SpawnPoint.qtn" />
     <Content Include="QTN\SpawnPoints.qtn" />
     <Content Include="QTN\Team.qtn" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="SimpleBot\Actions" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-3980499044590056625
+--- !u!114 &-4621682105090451156
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,26 +10,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c93d712ea7e457f4e90343022be748d9, type: 3}
-  m_Name: NewState_0
+  m_Name: Patrol_0
   m_EditorClassIdentifier: 
   Settings:
     Identifier:
-      Path: Resources/DB/CircuitExport/HFSM_Assets/SimpleBot|NewState_0
+      Path: Resources/DB/CircuitExport/HFSM_Assets/SimpleBot|Patrol_0
       Guid:
-        Value: 2389795383037670329
-    Label: NewState
-    OnUpdateLinks:
-    - Id:
-        Value: 4329848861328770665
+        Value: 3410429075028676246
+    Label: Patrol
+    OnUpdateLinks: []
     OnEnterLinks: []
     OnExitLinks: []
     Transitions: []
-    ChildrenLinks: []
+    ChildrenLinks:
+    - Id:
+        Value: 4594862549070492907
+    - Id:
+        Value: 607332869539278947
     ParentLink:
       Id:
         Value: 0
     Level: 0
---- !u!114 &-30657691778344149
+--- !u!114 &-4402704428726072943
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -38,16 +40,39 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0226c4c0bbed23d4587299f115bd3a9f, type: 3}
-  m_Name: DebugAction_0
+  m_Script: {fileID: 11500000, guid: 1be624c1ef45bd0448ff13f15ccab488, type: 3}
+  m_Name: SetNextWayPoint_2
   m_EditorClassIdentifier: 
   Settings:
     Identifier:
-      Path: Resources/DB/CircuitExport/HFSM_Assets/SimpleBot|DebugAction_0
+      Path: Resources/DB/CircuitExport/HFSM_Assets/SimpleBot|SetNextWayPoint_2
       Guid:
-        Value: 4329848861328770665
+        Value: 2307849585476873016
     Label: 
-    Message: Hello World
+    wayPointIndex:
+      Key: CurrentWayPointIndex
+--- !u!114 &-3291618379997914762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dce1dc4b0ee98814b80ea88f2b7e594f, type: 3}
+  m_Name: WayPointReached_1
+  m_EditorClassIdentifier: 
+  Settings:
+    Identifier:
+      Path: Resources/DB/CircuitExport/HFSM_Assets/SimpleBot|WayPointReached_1
+      Guid:
+        Value: 2036402779927197045
+    Label: 
+    CurrentWayPointIndex:
+      Key: CurrentWayPointIndex
+    Radius:
+      RawValue: 19660
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64,9 +89,158 @@ MonoBehaviour:
     Identifier:
       Path: Resources/DB/CircuitExport/HFSM_Assets/SimpleBot
       Guid:
-        Value: 351279636556756410
+        Value: 4261454104239592746
     Label: SimpleBot
     StatesLinks:
     - Id:
-        Value: 2389795383037670329
+        Value: 3410429075028676246
     EventsNames: []
+--- !u!114 &1230051061985379072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c783b08c33a036945adbf422ac955ff1, type: 3}
+  m_Name: MoveToWayPoint_0
+  m_EditorClassIdentifier: 
+  Settings:
+    Identifier:
+      Path: Resources/DB/CircuitExport/HFSM_Assets/SimpleBot|MoveToWayPoint_0
+      Guid:
+        Value: 4464863168875327818
+    Label: 
+    wayPointIndex:
+      Key: CurrentWayPointIndex
+    speed:
+      RawValue: 3276
+--- !u!114 &2667950479950803983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c93d712ea7e457f4e90343022be748d9, type: 3}
+  m_Name: Wait_2
+  m_EditorClassIdentifier: 
+  Settings:
+    Identifier:
+      Path: Resources/DB/CircuitExport/HFSM_Assets/SimpleBot|Wait_2
+      Guid:
+        Value: 607332869539278947
+    Label: Wait
+    OnUpdateLinks:
+    - Id:
+        Value: 1370279261625699553
+    OnEnterLinks: []
+    OnExitLinks:
+    - Id:
+        Value: 2307849585476873016
+    Transitions:
+    - Id: cae40cb0-0a02-413b-8f92-59b2135aef20
+      EventKey: 0
+      DecisionLink:
+        Id:
+          Value: 337072439544349976
+      StateLink:
+        Id:
+          Value: 4594862549070492907
+      TransitionSetLink:
+        Id:
+          Value: 0
+    ChildrenLinks: []
+    ParentLink:
+      Id:
+        Value: 3410429075028676246
+    Level: 1
+--- !u!114 &5788422826409717749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 196c5d1eb0cb5fe4a938e3c989acc0ba, type: 3}
+  m_Name: TimerDecision_0
+  m_EditorClassIdentifier: 
+  Settings:
+    Identifier:
+      Path: Resources/DB/CircuitExport/HFSM_Assets/SimpleBot|TimerDecision_0
+      Guid:
+        Value: 337072439544349976
+    Label: 
+    TimeToTrueState:
+      Source: 1
+      Key: 
+      DefaultValue:
+        RawValue: 65536
+      FunctionRef:
+        Id:
+          Value: 0
+--- !u!114 &6051731367531100674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c93d712ea7e457f4e90343022be748d9, type: 3}
+  m_Name: MoveToWayPoint_1
+  m_EditorClassIdentifier: 
+  Settings:
+    Identifier:
+      Path: Resources/DB/CircuitExport/HFSM_Assets/SimpleBot|MoveToWayPoint_1
+      Guid:
+        Value: 4594862549070492907
+    Label: MoveToWayPoint
+    OnUpdateLinks:
+    - Id:
+        Value: 4464863168875327818
+    OnEnterLinks: []
+    OnExitLinks: []
+    Transitions:
+    - Id: 3165a393-9cd9-4b85-92d9-a86a4b208603
+      EventKey: 0
+      DecisionLink:
+        Id:
+          Value: 2036402779927197045
+      StateLink:
+        Id:
+          Value: 607332869539278947
+      TransitionSetLink:
+        Id:
+          Value: 0
+    ChildrenLinks: []
+    ParentLink:
+      Id:
+        Value: 3410429075028676246
+    Level: 1
+--- !u!114 &7343552111425137915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0226c4c0bbed23d4587299f115bd3a9f, type: 3}
+  m_Name: DebugAction_1
+  m_EditorClassIdentifier: 
+  Settings:
+    Identifier:
+      Path: Resources/DB/CircuitExport/HFSM_Assets/SimpleBot|DebugAction_1
+      Guid:
+        Value: 1370279261625699553
+    Label: 
+    Message: Wait

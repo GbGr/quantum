@@ -46,10 +46,15 @@ MonoBehaviour:
         Id:
           Value: 167245961817396670
       ResourcePath: DB/Map1_mesh
-    - Path: Resources/DB/CircuitExport/HFSM_Assets/SimpleBot
+    - Path: Resources/DB/CircuitExport/HFSM_Assets/SimpleBot|TimerDecision_0
       AssetRef:
         Id:
-          Value: 351279636556756410
+          Value: 337072439544349976
+      ResourcePath: DB/CircuitExport/HFSM_Assets/SimpleBot
+    - Path: Resources/DB/CircuitExport/HFSM_Assets/SimpleBot|Wait_2
+      AssetRef:
+        Id:
+          Value: 607332869539278947
       ResourcePath: DB/CircuitExport/HFSM_Assets/SimpleBot
     - Path: Resources/DB/Prefabs/EnemyBot|EntityPrototype
       AssetRef:
@@ -76,6 +81,11 @@ MonoBehaviour:
         Id:
           Value: 1356846517101102878
       ResourcePath: DB/CircuitExport/Blackboard_Assets/SimpleBotBlackboardInitializer
+    - Path: Resources/DB/CircuitExport/HFSM_Assets/SimpleBot|DebugAction_1
+      AssetRef:
+        Id:
+          Value: 1370279261625699553
+      ResourcePath: DB/CircuitExport/HFSM_Assets/SimpleBot
     - Path: Resources/DB/Configs/Guns/Shotgun
       AssetRef:
         Id:
@@ -86,10 +96,15 @@ MonoBehaviour:
         Id:
           Value: 1710471675203725834
       ResourcePath: DB/Map1
-    - Path: Resources/DB/CircuitExport/HFSM_Assets/SimpleBot|NewState_0
+    - Path: Resources/DB/CircuitExport/HFSM_Assets/SimpleBot|WayPointReached_1
       AssetRef:
         Id:
-          Value: 2389795383037670329
+          Value: 2036402779927197045
+      ResourcePath: DB/CircuitExport/HFSM_Assets/SimpleBot
+    - Path: Resources/DB/CircuitExport/HFSM_Assets/SimpleBot|SetNextWayPoint_2
+      AssetRef:
+        Id:
+          Value: 2307849585476873016
       ResourcePath: DB/CircuitExport/HFSM_Assets/SimpleBot
     - Path: Resources/DB/Prefabs/Bullet|EntityView
       AssetRef:
@@ -106,6 +121,11 @@ MonoBehaviour:
         Id:
           Value: 2798896845451685865
       ResourcePath: DB/Prefabs/EnemyBot
+    - Path: Resources/DB/CircuitExport/HFSM_Assets/SimpleBot|Patrol_0
+      AssetRef:
+        Id:
+          Value: 3410429075028676246
+      ResourcePath: DB/CircuitExport/HFSM_Assets/SimpleBot
     - Path: Resources/DB/Configs/Guns/Pistol
       AssetRef:
         Id:
@@ -121,8 +141,18 @@ MonoBehaviour:
         Id:
           Value: 4243816968339509413
       ResourcePath: DB/MyLevel/Level_01_map_mesh
-    - Path: Resources/DB/CircuitExport/HFSM_Assets/SimpleBot|DebugAction_0
+    - Path: Resources/DB/CircuitExport/HFSM_Assets/SimpleBot
       AssetRef:
         Id:
-          Value: 4329848861328770665
+          Value: 4261454104239592746
+      ResourcePath: DB/CircuitExport/HFSM_Assets/SimpleBot
+    - Path: Resources/DB/CircuitExport/HFSM_Assets/SimpleBot|MoveToWayPoint_0
+      AssetRef:
+        Id:
+          Value: 4464863168875327818
+      ResourcePath: DB/CircuitExport/HFSM_Assets/SimpleBot
+    - Path: Resources/DB/CircuitExport/HFSM_Assets/SimpleBot|MoveToWayPoint_1
+      AssetRef:
+        Id:
+          Value: 4594862549070492907
       ResourcePath: DB/CircuitExport/HFSM_Assets/SimpleBot

@@ -251,6 +251,7 @@ GameObject:
   - component: {fileID: 270679434}
   - component: {fileID: 270679433}
   - component: {fileID: 270679435}
+  - component: {fileID: 270679436}
   m_Layer: 0
   m_Name: WayPoint (3)
   m_TagString: Untagged
@@ -450,6 +451,20 @@ MonoBehaviour:
   OnEntityDestroyed:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &270679436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270679432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b402b656d94fee44b914867b3eb7c0d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Prototype:
+    _empty_prototype_dummy_field_: 0
 --- !u!1 &281228121
 GameObject:
   m_ObjectHideFlags: 0
@@ -792,15 +807,7 @@ MonoBehaviour:
     SimulationConfig:
       Id:
         Value: 0
-  Players:
-  - playerPrototype:
-      Id:
-        Value: 724801671849601603
-    myTeam: 0
-  - playerPrototype:
-      Id:
-        Value: 724801671849601603
-    myTeam: 1
+  Players: []
   PreloadAddressables: 0
   DynamicAssetDB:
     OnInitialDynamicAssetsRequested:
@@ -3029,6 +3036,7 @@ GameObject:
   - component: {fileID: 413435379}
   - component: {fileID: 413435378}
   - component: {fileID: 413435380}
+  - component: {fileID: 413435381}
   m_Layer: 0
   m_Name: WayPoint (1)
   m_TagString: Untagged
@@ -3228,6 +3236,20 @@ MonoBehaviour:
   OnEntityDestroyed:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &413435381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413435377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b402b656d94fee44b914867b3eb7c0d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Prototype:
+    _empty_prototype_dummy_field_: 0
 --- !u!1 &609632647
 GameObject:
   m_ObjectHideFlags: 0
@@ -4097,6 +4119,7 @@ GameObject:
   - component: {fileID: 1268685252}
   - component: {fileID: 1268685251}
   - component: {fileID: 1268685253}
+  - component: {fileID: 1268685254}
   m_Layer: 0
   m_Name: WayPoint (2)
   m_TagString: Untagged
@@ -4296,6 +4319,20 @@ MonoBehaviour:
   OnEntityDestroyed:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1268685254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1268685250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b402b656d94fee44b914867b3eb7c0d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Prototype:
+    _empty_prototype_dummy_field_: 0
 --- !u!1 &1304183654
 GameObject:
   m_ObjectHideFlags: 0
@@ -5121,6 +5158,7 @@ GameObject:
   - component: {fileID: 1814266724}
   - component: {fileID: 1814266723}
   - component: {fileID: 1814266725}
+  - component: {fileID: 1814266726}
   m_Layer: 0
   m_Name: WayPoint (4)
   m_TagString: Untagged
@@ -5320,6 +5358,20 @@ MonoBehaviour:
   OnEntityDestroyed:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1814266726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1814266722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b402b656d94fee44b914867b3eb7c0d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Prototype:
+    _empty_prototype_dummy_field_: 0
 --- !u!1 &2008152043
 GameObject:
   m_ObjectHideFlags: 0

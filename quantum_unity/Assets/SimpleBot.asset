@@ -13,35 +13,132 @@ MonoBehaviour:
   m_Name: SimpleBot
   m_EditorClassIdentifier: 
   Xml: "<?xml version=\"1.0\" encoding=\"utf-16\"?>\r\n<Document>\r\n  <Id>9496fd43-55e2-40af-906c-4327fa36aa05</Id>\r\n 
-    <Version>1</Version>\r\n  <Meta>false</Meta>\r\n  <Graph>dfc9a990-c9e3-4745-a056-97d2cb3a057d</Graph>\r\n 
-    <DebugKey></DebugKey>\r\n  <Flags>0</Flags>\r\n  <Parent>$statemachine</Parent>\r\n 
-    <Error Count=\"0\" />\r\n  <Comments Count=\"0\" />\r\n  <StickyNotes Count=\"0\"
-    />\r\n  <HiddenActionsDecisions Count=\"0\" />\r\n  <Vars Count=\"1\">\r\n   
-    <Key>9099544e-c8b8-436f-a700-4c8a98e0f419</Key>\r\n    <Var>\r\n      <Id>9099544e-c8b8-436f-a700-4c8a98e0f419</Id>\r\n     
-    <Name>CurrentWayPointIndex</Name>\r\n      <Type>@int32</Type>\r\n      <Default></Default>\r\n     
+    <Version>1</Version>\r\n  <Meta>false</Meta>\r\n  <Graph>52162478-6642-4cb8-9076-88e71aae3ce6</Graph>\r\n 
+    <DebugKey>30159bab-0a1e-4c53-92a1-6618fe0989b4</DebugKey>\r\n  <Flags>0</Flags>\r\n 
+    <Parent>$statemachine</Parent>\r\n  <Error Count=\"0\" />\r\n  <Comments Count=\"0\"
+    />\r\n  <StickyNotes Count=\"0\" />\r\n  <HiddenActionsDecisions Count=\"0\"
+    />\r\n  <Vars Count=\"3\">\r\n    <Key>31f16b31-b102-45c9-8ae7-b6db31595b65</Key>\r\n   
+    <Var>\r\n      <Id>31f16b31-b102-45c9-8ae7-b6db31595b65</Id>\r\n      <Name>PatrolSpeed</Name>\r\n     
+    <Type>Photon.Deterministic.FP, PhotonDeterministic</Type>\r\n      <Default></Default>\r\n     
     <Flags>0</Flags>\r\n      <VarMode>MetaField</VarMode>\r\n      <TypeMode>Value</TypeMode>\r\n     
-    <Scope>Blackboard</Scope>\r\n    </Var>\r\n  </Vars>\r\n  <Nodes Count=\"4\">\r\n   
-    <Key>1012d451-0d4d-450c-8854-6f7572e68de1</Key>\r\n    <Node>\r\n      <Id>1012d451-0d4d-450c-8854-6f7572e68de1</Id>\r\n     
-    <Name>DebugAction</Name>\r\n      <Comment></Comment>\r\n      <Graph>dfc9a990-c9e3-4745-a056-97d2cb3a057d</Graph>\r\n     
-    <Parent>DebugAction</Parent>\r\n      <DebugIndex>-1</DebugIndex>\r\n      <Flags>0</Flags>\r\n     
-    <Position>257|8||0</Position>\r\n      <StaticIn Count=\"3\">\r\n        <Slot>\r\n         
-    <Id>$exec</Id>\r\n          <Name></Name>\r\n          <Value />\r\n         
-    <Type>$exec</Type>\r\n          <Mode>In</Mode>\r\n          <Flags>2</Flags>\r\n         
+    <Scope>Constant</Scope>\r\n    </Var>\r\n    <Key>46f5bb02-0423-4938-b61f-a54c551a0321</Key>\r\n   
+    <Var>\r\n      <Id>46f5bb02-0423-4938-b61f-a54c551a0321</Id>\r\n      <Name>WaitDuration</Name>\r\n     
+    <Type>Photon.Deterministic.FP, PhotonDeterministic</Type>\r\n      <Default></Default>\r\n     
+    <Flags>0</Flags>\r\n      <VarMode>MetaField</VarMode>\r\n      <TypeMode>Value</TypeMode>\r\n     
+    <Scope>Constant</Scope>\r\n    </Var>\r\n    <Key>9099544e-c8b8-436f-a700-4c8a98e0f419</Key>\r\n   
+    <Var>\r\n      <Id>9099544e-c8b8-436f-a700-4c8a98e0f419</Id>\r\n      <Name>CurrentWayPointIndex</Name>\r\n     
+    <Type>@int32</Type>\r\n      <Default></Default>\r\n      <Flags>0</Flags>\r\n     
+    <VarMode>MetaField</VarMode>\r\n      <TypeMode>Value</TypeMode>\r\n      <Scope>Blackboard</Scope>\r\n   
+    </Var>\r\n  </Vars>\r\n  <Nodes Count=\"21\">\r\n    <Key>09a0a719-5303-4b4c-a52b-c4625faf4e68</Key>\r\n   
+    <Node>\r\n      <Id>09a0a719-5303-4b4c-a52b-c4625faf4e68</Id>\r\n      <Name>Wait</Name>\r\n     
+    <Comment></Comment>\r\n      <Graph>dfc9a990-c9e3-4745-a056-97d2cb3a057d</Graph>\r\n     
+    <Parent>$state</Parent>\r\n      <DebugIndex>-1</DebugIndex>\r\n      <Flags>32</Flags>\r\n     
+    <Position>389|-100||0</Position>\r\n      <StaticIn Count=\"1\">\r\n        <Slot>\r\n         
+    <Id>$in</Id>\r\n          <Name>In</Name>\r\n          <Value />\r\n         
+    <Type>$transition</Type>\r\n          <Mode>In</Mode>\r\n          <Flags>2</Flags>\r\n         
+    <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n      </StaticIn>\r\n      <StaticOut
+    Count=\"1\">\r\n        <Slot>\r\n          <Id>$out</Id>\r\n          <Name>Out</Name>\r\n         
+    <Value />\r\n          <Type>$transition</Type>\r\n          <Mode>Out</Mode>\r\n         
+    <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n     
+    </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data Count=\"2\">\r\n       
+    <Data>\r\n          <Name>$default</Name>\r\n          <Value Type=\"@boolean\">False</Value>\r\n       
+    </Data>\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
+    Type=\"System.Int64, mscorlib\">607332869539278947</Value>\r\n        </Data>\r\n     
+    </Data>\r\n    </Node>\r\n    <Key>0ed53ac4-3882-4057-9dd4-5fd04ed174d9</Key>\r\n   
+    <Node>\r\n      <Id>0ed53ac4-3882-4057-9dd4-5fd04ed174d9</Id>\r\n      <Name>CurrentWayPointIndex</Name>\r\n     
+    <Comment></Comment>\r\n      <Graph>09a0a719-5303-4b4c-a52b-c4625faf4e68</Graph>\r\n     
+    <Parent>$blackboardRef</Parent>\r\n      <DebugIndex>-1</DebugIndex>\r\n     
+    <Flags>0</Flags>\r\n      <Position>17|164||0</Position>\r\n      <StaticIn Count=\"0\"
+    />\r\n      <StaticOut Count=\"2\">\r\n        <Slot>\r\n          <Id>$keyOut</Id>\r\n         
+    <Name>Key</Name>\r\n          <Value />\r\n          <Type>Quantum.AIBlackboardValueKey,
+    quantum.code</Type>\r\n          <Mode>Out</Mode>\r\n          <Flags>2</Flags>\r\n         
     <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n        <Slot>\r\n         
-    <Id>Message</Id>\r\n          <Name>Message</Name>\r\n          <Value Type=\"@string\">Hello
-    World</Value>\r\n          <Type>@string</Type>\r\n          <Mode>In</Mode>\r\n         
+    <Id>$valueOut</Id>\r\n          <Name>Value</Name>\r\n          <Value />\r\n         
+    <Type>@int32</Type>\r\n          <Mode>Out</Mode>\r\n          <Flags>2</Flags>\r\n         
+    <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n      </StaticOut>\r\n     
+    <Groups Count=\"0\" />\r\n      <Data Count=\"2\">\r\n        <Data>\r\n         
+    <Name>$varId</Name>\r\n          <Value Type=\"@string\">9099544e-c8b8-436f-a700-4c8a98e0f419</Value>\r\n       
+    </Data>\r\n        <Data>\r\n          <Name></Name>\r\n          <Value />\r\n       
+    </Data>\r\n      </Data>\r\n    </Node>\r\n    <Key>17189f56-4119-4c69-bf7b-c911f32383e9</Key>\r\n   
+    <Node>\r\n      <Id>17189f56-4119-4c69-bf7b-c911f32383e9</Id>\r\n      <Name>MoveToWayPoint</Name>\r\n     
+    <Comment></Comment>\r\n      <Graph>dfc9a990-c9e3-4745-a056-97d2cb3a057d</Graph>\r\n     
+    <Parent>$state</Parent>\r\n      <DebugIndex>-1</DebugIndex>\r\n      <Flags>32</Flags>\r\n     
+    <Position>-23|-207||0</Position>\r\n      <StaticIn Count=\"1\">\r\n        <Slot>\r\n         
+    <Id>$in</Id>\r\n          <Name>In</Name>\r\n          <Value />\r\n         
+    <Type>$transition</Type>\r\n          <Mode>In</Mode>\r\n          <Flags>2</Flags>\r\n         
+    <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n      </StaticIn>\r\n      <StaticOut
+    Count=\"1\">\r\n        <Slot>\r\n          <Id>$out0</Id>\r\n          <Name>Out0</Name>\r\n         
+    <Value />\r\n          <Type>$transition</Type>\r\n          <Mode>Out</Mode>\r\n         
+    <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n     
+    </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data Count=\"2\">\r\n       
+    <Data>\r\n          <Name>$default</Name>\r\n          <Value Type=\"@boolean\">True</Value>\r\n       
+    </Data>\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
+    Type=\"System.Int64, mscorlib\">4594862549070492907</Value>\r\n        </Data>\r\n     
+    </Data>\r\n    </Node>\r\n    <Key>17c2ed90-b336-4c2d-98e4-93cc97575587</Key>\r\n   
+    <Node>\r\n      <Id>17c2ed90-b336-4c2d-98e4-93cc97575587</Id>\r\n      <Name>CurrentWayPointIndex</Name>\r\n     
+    <Comment></Comment>\r\n      <Graph>17189f56-4119-4c69-bf7b-c911f32383e9</Graph>\r\n     
+    <Parent>$blackboardRef</Parent>\r\n      <DebugIndex>-1</DebugIndex>\r\n     
+    <Flags>0</Flags>\r\n      <Position>145|52||0</Position>\r\n      <StaticIn Count=\"0\"
+    />\r\n      <StaticOut Count=\"2\">\r\n        <Slot>\r\n          <Id>$keyOut</Id>\r\n         
+    <Name>Key</Name>\r\n          <Value />\r\n          <Type>Quantum.AIBlackboardValueKey,
+    quantum.code</Type>\r\n          <Mode>Out</Mode>\r\n          <Flags>2</Flags>\r\n         
+    <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n        <Slot>\r\n         
+    <Id>$valueOut</Id>\r\n          <Name>Value</Name>\r\n          <Value />\r\n         
+    <Type>@int32</Type>\r\n          <Mode>Out</Mode>\r\n          <Flags>2</Flags>\r\n         
+    <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n      </StaticOut>\r\n     
+    <Groups Count=\"0\" />\r\n      <Data Count=\"2\">\r\n        <Data>\r\n         
+    <Name>$varId</Name>\r\n          <Value Type=\"@string\">9099544e-c8b8-436f-a700-4c8a98e0f419</Value>\r\n       
+    </Data>\r\n        <Data>\r\n          <Name></Name>\r\n          <Value />\r\n       
+    </Data>\r\n      </Data>\r\n    </Node>\r\n    <Key>28e7a5e9-47d7-4cf0-8d4d-282d5b7bb32f</Key>\r\n   
+    <Node>\r\n      <Id>28e7a5e9-47d7-4cf0-8d4d-282d5b7bb32f</Id>\r\n      <Name>TimerDecision</Name>\r\n     
+    <Comment></Comment>\r\n      <Graph>56e2c9d4-6b2c-4d61-b2ec-db591b42b732</Graph>\r\n     
+    <Parent>$decision/TimerDecision</Parent>\r\n      <DebugIndex>-1</DebugIndex>\r\n     
+    <Flags>0</Flags>\r\n      <Position>-258|12||0</Position>\r\n      <StaticIn
+    Count=\"2\">\r\n        <Slot>\r\n          <Id>TimeToTrueState</Id>\r\n         
+    <Name>TimeToTrueState</Name>\r\n          <Value Type=\"Quantum.AIParamFP, quantum.code\">196608</Value>\r\n         
+    <Type>Quantum.AIParamFP, quantum.code</Type>\r\n          <Mode>In</Mode>\r\n         
     <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n       
     <Slot>\r\n          <Id>Label</Id>\r\n          <Name>Label</Name>\r\n         
     <Value />\r\n          <Type>@string</Type>\r\n          <Mode>In</Mode>\r\n         
     <Flags>512</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n     
-    </StaticIn>\r\n      <StaticOut Count=\"1\">\r\n        <Slot>\r\n          <Id>$exec</Id>\r\n         
-    <Name></Name>\r\n          <Value />\r\n          <Type>$exec</Type>\r\n         
+    </StaticIn>\r\n      <StaticOut Count=\"1\">\r\n        <Slot>\r\n          <Id>$decisionOut</Id>\r\n         
+    <Name>Result</Name>\r\n          <Value />\r\n          <Type>$decision</Type>\r\n         
     <Mode>Out</Mode>\r\n          <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n       
     </Slot>\r\n      </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data
-    Count=\"1\">\r\n        <Data>\r\n          <Name>$guid</Name>\r\n          <Value
-    Type=\"@string\">00000000-0000-0000-0000-000000000000</Value>\r\n        </Data>\r\n     
-    </Data>\r\n    </Node>\r\n    <Key>7beb4ec5-d5af-4c0a-8854-05c2453940ca</Key>\r\n   
-    <Node>\r\n      <Id>7beb4ec5-d5af-4c0a-8854-05c2453940ca</Id>\r\n      <Name>Actions</Name>\r\n     
+    Count=\"1\">\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
+    Type=\"System.Int64, mscorlib\">337072439544349976</Value>\r\n        </Data>\r\n     
+    </Data>\r\n    </Node>\r\n    <Key>3165a393-9cd9-4b85-92d9-a86a4b208603</Key>\r\n   
+    <Node>\r\n      <Id>3165a393-9cd9-4b85-92d9-a86a4b208603</Id>\r\n      <Name>Transition</Name>\r\n     
+    <Comment></Comment>\r\n      <Graph>52162478-6642-4cb8-9076-88e71aae3ce6</Graph>\r\n     
+    <Parent>$transition</Parent>\r\n      <DebugIndex>-1</DebugIndex>\r\n      <Flags>129</Flags>\r\n     
+    <Position>0|0||0</Position>\r\n      <StaticIn Count=\"3\">\r\n        <Slot>\r\n         
+    <Id>$eventIn</Id>\r\n          <Name>Events</Name>\r\n          <Value />\r\n         
+    <Type>$event</Type>\r\n          <Mode>In</Mode>\r\n          <Flags>0</Flags>\r\n         
+    <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n        <Slot>\r\n         
+    <Id>$decisionIn</Id>\r\n          <Name>Decision</Name>\r\n          <Value />\r\n         
+    <Type>$decision</Type>\r\n          <Mode>In</Mode>\r\n          <Flags>0</Flags>\r\n         
+    <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n        <Slot>\r\n         
+    <Id>Priority</Id>\r\n          <Name>Priority</Name>\r\n          <Value Type=\"@int32\">0</Value>\r\n         
+    <Type>@int32</Type>\r\n          <Mode>In</Mode>\r\n          <Flags>0</Flags>\r\n         
+    <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n      </StaticIn>\r\n      <StaticOut
+    Count=\"0\" />\r\n      <Groups Count=\"0\" />\r\n      <Data Count=\"0\" />\r\n   
+    </Node>\r\n    <Key>6cd40a97-e490-4a69-ab66-5c41b2fdce2e</Key>\r\n    <Node>\r\n     
+    <Id>6cd40a97-e490-4a69-ab66-5c41b2fdce2e</Id>\r\n      <Name>Actions</Name>\r\n     
+    <Comment></Comment>\r\n      <Graph>17189f56-4119-4c69-bf7b-c911f32383e9</Graph>\r\n     
+    <Parent>$actionRoot</Parent>\r\n      <DebugIndex>-1</DebugIndex>\r\n      <Flags>129</Flags>\r\n     
+    <Position>5|-5||0</Position>\r\n      <StaticIn Count=\"0\" />\r\n      <StaticOut
+    Count=\"3\">\r\n        <Slot>\r\n          <Id>$enter</Id>\r\n          <Name>On
+    Enter</Name>\r\n          <Value />\r\n          <Type>$exec</Type>\r\n         
+    <Mode>Out</Mode>\r\n          <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n       
+    </Slot>\r\n        <Slot>\r\n          <Id>$update</Id>\r\n          <Name>On
+    Update</Name>\r\n          <Value />\r\n          <Type>$exec</Type>\r\n         
+    <Mode>Out</Mode>\r\n          <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n       
+    </Slot>\r\n        <Slot>\r\n          <Id>$exit</Id>\r\n          <Name>On Exit</Name>\r\n         
+    <Value />\r\n          <Type>$exec</Type>\r\n          <Mode>Out</Mode>\r\n         
+    <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n     
+    </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data Count=\"0\" />\r\n   
+    </Node>\r\n    <Key>7beb4ec5-d5af-4c0a-8854-05c2453940ca</Key>\r\n    <Node>\r\n     
+    <Id>7beb4ec5-d5af-4c0a-8854-05c2453940ca</Id>\r\n      <Name>Actions</Name>\r\n     
     <Comment></Comment>\r\n      <Graph>dfc9a990-c9e3-4745-a056-97d2cb3a057d</Graph>\r\n     
     <Parent>$actionRoot</Parent>\r\n      <DebugIndex>-1</DebugIndex>\r\n      <Flags>129</Flags>\r\n     
     <Position>5|-5||0</Position>\r\n      <StaticIn Count=\"0\" />\r\n      <StaticOut
@@ -55,8 +152,185 @@ MonoBehaviour:
     <Value />\r\n          <Type>$exec</Type>\r\n          <Mode>Out</Mode>\r\n         
     <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n     
     </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data Count=\"0\" />\r\n   
+    </Node>\r\n    <Key>8565e65e-daea-4020-a01c-6bfce906cddc</Key>\r\n    <Node>\r\n     
+    <Id>8565e65e-daea-4020-a01c-6bfce906cddc</Id>\r\n      <Name>Actions</Name>\r\n     
+    <Comment></Comment>\r\n      <Graph>09a0a719-5303-4b4c-a52b-c4625faf4e68</Graph>\r\n     
+    <Parent>$actionRoot</Parent>\r\n      <DebugIndex>-1</DebugIndex>\r\n      <Flags>129</Flags>\r\n     
+    <Position>5|-5||0</Position>\r\n      <StaticIn Count=\"0\" />\r\n      <StaticOut
+    Count=\"3\">\r\n        <Slot>\r\n          <Id>$enter</Id>\r\n          <Name>On
+    Enter</Name>\r\n          <Value />\r\n          <Type>$exec</Type>\r\n         
+    <Mode>Out</Mode>\r\n          <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n       
+    </Slot>\r\n        <Slot>\r\n          <Id>$update</Id>\r\n          <Name>On
+    Update</Name>\r\n          <Value />\r\n          <Type>$exec</Type>\r\n         
+    <Mode>Out</Mode>\r\n          <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n       
+    </Slot>\r\n        <Slot>\r\n          <Id>$exit</Id>\r\n          <Name>On Exit</Name>\r\n         
+    <Value />\r\n          <Type>$exec</Type>\r\n          <Mode>Out</Mode>\r\n         
+    <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n     
+    </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data Count=\"0\" />\r\n   
+    </Node>\r\n    <Key>99a6ad3e-b80d-4b56-bbd6-30b6269f368b</Key>\r\n    <Node>\r\n     
+    <Id>99a6ad3e-b80d-4b56-bbd6-30b6269f368b</Id>\r\n      <Name>WayPointReached</Name>\r\n     
+    <Comment></Comment>\r\n      <Graph>52162478-6642-4cb8-9076-88e71aae3ce6</Graph>\r\n     
+    <Parent>$decision/WayPointReached</Parent>\r\n      <DebugIndex>-1</DebugIndex>\r\n     
+    <Flags>0</Flags>\r\n      <Position>-307|28||0</Position>\r\n      <StaticIn
+    Count=\"3\">\r\n        <Slot>\r\n          <Id>CurrentWayPointIndex</Id>\r\n         
+    <Name>CurrentWayPointIndex</Name>\r\n          <Value Type=\"@int32\">0</Value>\r\n         
+    <Type>Quantum.AIBlackboardValueKey, quantum.code</Type>\r\n          <Mode>In</Mode>\r\n         
+    <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n       
+    <Slot>\r\n          <Id>Radius</Id>\r\n          <Name>Radius</Name>\r\n         
+    <Value Type=\"Photon.Deterministic.FP, PhotonDeterministic\">19660</Value>\r\n         
+    <Type>Photon.Deterministic.FP, PhotonDeterministic</Type>\r\n          <Mode>In</Mode>\r\n         
+    <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n       
+    <Slot>\r\n          <Id>Label</Id>\r\n          <Name>Label</Name>\r\n         
+    <Value />\r\n          <Type>@string</Type>\r\n          <Mode>In</Mode>\r\n         
+    <Flags>512</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n     
+    </StaticIn>\r\n      <StaticOut Count=\"1\">\r\n        <Slot>\r\n          <Id>$decisionOut</Id>\r\n         
+    <Name>Result</Name>\r\n          <Value />\r\n          <Type>$decision</Type>\r\n         
+    <Mode>Out</Mode>\r\n          <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n       
+    </Slot>\r\n      </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data
+    Count=\"1\">\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
+    Type=\"System.Int64, mscorlib\">2036402779927197045</Value>\r\n        </Data>\r\n     
+    </Data>\r\n    </Node>\r\n    <Key>9fd167f0-b6a4-4c07-8e3f-f1867e3dc51d</Key>\r\n   
+    <Node>\r\n      <Id>9fd167f0-b6a4-4c07-8e3f-f1867e3dc51d</Id>\r\n      <Name>CurrentWayPointIndex</Name>\r\n     
+    <Comment></Comment>\r\n      <Graph>52162478-6642-4cb8-9076-88e71aae3ce6</Graph>\r\n     
+    <Parent>$blackboardRef</Parent>\r\n      <DebugIndex>-1</DebugIndex>\r\n     
+    <Flags>0</Flags>\r\n      <Position>-522|-31||0</Position>\r\n      <StaticIn
+    Count=\"0\" />\r\n      <StaticOut Count=\"2\">\r\n        <Slot>\r\n         
+    <Id>$keyOut</Id>\r\n          <Name>Key</Name>\r\n          <Value />\r\n         
+    <Type>Quantum.AIBlackboardValueKey, quantum.code</Type>\r\n          <Mode>Out</Mode>\r\n         
+    <Flags>2</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n       
+    <Slot>\r\n          <Id>$valueOut</Id>\r\n          <Name>Value</Name>\r\n         
+    <Value />\r\n          <Type>@int32</Type>\r\n          <Mode>Out</Mode>\r\n         
+    <Flags>2</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n     
+    </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data Count=\"2\">\r\n       
+    <Data>\r\n          <Name>$varId</Name>\r\n          <Value Type=\"@string\">9099544e-c8b8-436f-a700-4c8a98e0f419</Value>\r\n       
+    </Data>\r\n        <Data>\r\n          <Name></Name>\r\n          <Value />\r\n       
+    </Data>\r\n      </Data>\r\n    </Node>\r\n    <Key>a099e1b6-f748-4fe2-b27f-a66f72287587</Key>\r\n   
+    <Node>\r\n      <Id>a099e1b6-f748-4fe2-b27f-a66f72287587</Id>\r\n      <Name>Constant</Name>\r\n     
+    <Comment></Comment>\r\n      <Graph>9496fd43-55e2-40af-906c-4327fa36aa05</Graph>\r\n     
+    <Parent>$constantData</Parent>\r\n      <DebugIndex>-1</DebugIndex>\r\n     
+    <Flags>8</Flags>\r\n      <Position>-40|34||0</Position>\r\n      <StaticIn Count=\"0\"
+    />\r\n      <StaticOut Count=\"1\">\r\n        <Slot>\r\n          <Id>$value</Id>\r\n         
+    <Name>value</Name>\r\n          <Value />\r\n          <Type>Photon.Deterministic.FP,
+    PhotonDeterministic</Type>\r\n          <Mode>Out</Mode>\r\n          <Flags>2</Flags>\r\n         
+    <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n      </StaticOut>\r\n     
+    <Groups Count=\"0\" />\r\n      <Data Count=\"8\">\r\n        <Data>\r\n         
+    <Name>$default</Name>\r\n          <Value Type=\"Photon.Deterministic.FP, PhotonDeterministic\">65536</Value>\r\n       
+    </Data>\r\n        <Data>\r\n          <Name></Name>\r\n          <Value />\r\n       
+    </Data>\r\n        <Data>\r\n          <Name>$hasDefault</Name>\r\n         
+    <Value />\r\n        </Data>\r\n        <Data>\r\n          <Name>True</Name>\r\n         
+    <Value />\r\n        </Data>\r\n        <Data>\r\n          <Name>$constType</Name>\r\n         
+    <Value Type=\"@string\">FP</Value>\r\n        </Data>\r\n        <Data>\r\n         
+    <Name>Boolean</Name>\r\n          <Value />\r\n        </Data>\r\n        <Data>\r\n         
+    <Name>$varId</Name>\r\n          <Value Type=\"@string\">46f5bb02-0423-4938-b61f-a54c551a0321</Value>\r\n       
+    </Data>\r\n        <Data>\r\n          <Name></Name>\r\n          <Value />\r\n       
+    </Data>\r\n      </Data>\r\n    </Node>\r\n    <Key>bae117f3-ed7e-4d54-bb8e-4c16f6cb0ecd</Key>\r\n   
+    <Node>\r\n      <Id>bae117f3-ed7e-4d54-bb8e-4c16f6cb0ecd</Id>\r\n      <Name>DebugAction</Name>\r\n     
+    <Comment></Comment>\r\n      <Graph>09a0a719-5303-4b4c-a52b-c4625faf4e68</Graph>\r\n     
+    <Parent>DebugAction</Parent>\r\n      <DebugIndex>-1</DebugIndex>\r\n      <Flags>0</Flags>\r\n     
+    <Position>211|-20||0</Position>\r\n      <StaticIn Count=\"3\">\r\n        <Slot>\r\n         
+    <Id>$exec</Id>\r\n          <Name></Name>\r\n          <Value />\r\n         
+    <Type>$exec</Type>\r\n          <Mode>In</Mode>\r\n          <Flags>2</Flags>\r\n         
+    <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n        <Slot>\r\n         
+    <Id>Message</Id>\r\n          <Name>Message</Name>\r\n          <Value Type=\"@string\">Wait</Value>\r\n         
+    <Type>@string</Type>\r\n          <Mode>In</Mode>\r\n          <Flags>0</Flags>\r\n         
+    <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n        <Slot>\r\n         
+    <Id>Label</Id>\r\n          <Name>Label</Name>\r\n          <Value />\r\n         
+    <Type>@string</Type>\r\n          <Mode>In</Mode>\r\n          <Flags>512</Flags>\r\n         
+    <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n      </StaticIn>\r\n      <StaticOut
+    Count=\"1\">\r\n        <Slot>\r\n          <Id>$exec</Id>\r\n          <Name></Name>\r\n         
+    <Value />\r\n          <Type>$exec</Type>\r\n          <Mode>Out</Mode>\r\n         
+    <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n     
+    </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data Count=\"2\">\r\n       
+    <Data>\r\n          <Name>$guid</Name>\r\n          <Value Type=\"@string\">00000000-0000-0000-0000-000000000000</Value>\r\n       
+    </Data>\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
+    Type=\"System.Int64, mscorlib\">1370279261625699553</Value>\r\n        </Data>\r\n     
+    </Data>\r\n    </Node>\r\n    <Key>bd092e75-b1a1-4c79-a467-e4b1d9ea156f</Key>\r\n   
+    <Node>\r\n      <Id>bd092e75-b1a1-4c79-a467-e4b1d9ea156f</Id>\r\n      <Name>MoveToWayPoint</Name>\r\n     
+    <Comment></Comment>\r\n      <Graph>17189f56-4119-4c69-bf7b-c911f32383e9</Graph>\r\n     
+    <Parent>MoveToWayPoint</Parent>\r\n      <DebugIndex>-1</DebugIndex>\r\n     
+    <Flags>0</Flags>\r\n      <Position>503|8||0</Position>\r\n      <StaticIn Count=\"4\">\r\n       
+    <Slot>\r\n          <Id>$exec</Id>\r\n          <Name></Name>\r\n          <Value
+    />\r\n          <Type>$exec</Type>\r\n          <Mode>In</Mode>\r\n         
+    <Flags>2</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n       
+    <Slot>\r\n          <Id>wayPointIndex</Id>\r\n          <Name>wayPointIndex</Name>\r\n         
+    <Value Type=\"Quantum.AIBlackboardValueKey, quantum.code\">Quantum.AIBlackboardValueKey</Value>\r\n         
+    <Type>Quantum.AIBlackboardValueKey, quantum.code</Type>\r\n          <Mode>In</Mode>\r\n         
+    <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n       
+    <Slot>\r\n          <Id>speed</Id>\r\n          <Name>speed</Name>\r\n         
+    <Value Type=\"Photon.Deterministic.FP, PhotonDeterministic\">0</Value>\r\n         
+    <Type>Photon.Deterministic.FP, PhotonDeterministic</Type>\r\n          <Mode>In</Mode>\r\n         
+    <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n       
+    <Slot>\r\n          <Id>Label</Id>\r\n          <Name>Label</Name>\r\n         
+    <Value />\r\n          <Type>@string</Type>\r\n          <Mode>In</Mode>\r\n         
+    <Flags>512</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n     
+    </StaticIn>\r\n      <StaticOut Count=\"1\">\r\n        <Slot>\r\n          <Id>$exec</Id>\r\n         
+    <Name></Name>\r\n          <Value />\r\n          <Type>$exec</Type>\r\n         
+    <Mode>Out</Mode>\r\n          <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n       
+    </Slot>\r\n      </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data
+    Count=\"2\">\r\n        <Data>\r\n          <Name>$guid</Name>\r\n          <Value
+    Type=\"@string\">00000000-0000-0000-0000-000000000000</Value>\r\n        </Data>\r\n       
+    <Data>\r\n          <Name>Guid</Name>\r\n          <Value Type=\"System.Int64,
+    mscorlib\">4464863168875327818</Value>\r\n        </Data>\r\n      </Data>\r\n   
+    </Node>\r\n    <Key>c007acc2-7f42-4138-a9bf-a39ff69b7f31</Key>\r\n    <Node>\r\n     
+    <Id>c007acc2-7f42-4138-a9bf-a39ff69b7f31</Id>\r\n      <Name>Constant</Name>\r\n     
+    <Comment></Comment>\r\n      <Graph>9496fd43-55e2-40af-906c-4327fa36aa05</Graph>\r\n     
+    <Parent>$constantData</Parent>\r\n      <DebugIndex>-1</DebugIndex>\r\n     
+    <Flags>8</Flags>\r\n      <Position>334|136||0</Position>\r\n      <StaticIn
+    Count=\"0\" />\r\n      <StaticOut Count=\"1\">\r\n        <Slot>\r\n         
+    <Id>$value</Id>\r\n          <Name>value</Name>\r\n          <Value />\r\n         
+    <Type>Photon.Deterministic.FP, PhotonDeterministic</Type>\r\n          <Mode>Out</Mode>\r\n         
+    <Flags>2</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n     
+    </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data Count=\"8\">\r\n       
+    <Data>\r\n          <Name>$default</Name>\r\n          <Value Type=\"Photon.Deterministic.FP,
+    PhotonDeterministic\">3276</Value>\r\n        </Data>\r\n        <Data>\r\n         
+    <Name></Name>\r\n          <Value />\r\n        </Data>\r\n        <Data>\r\n         
+    <Name>$hasDefault</Name>\r\n          <Value />\r\n        </Data>\r\n       
+    <Data>\r\n          <Name>True</Name>\r\n          <Value />\r\n        </Data>\r\n       
+    <Data>\r\n          <Name>$constType</Name>\r\n          <Value Type=\"@string\">FP</Value>\r\n       
+    </Data>\r\n        <Data>\r\n          <Name>Boolean</Name>\r\n          <Value
+    />\r\n        </Data>\r\n        <Data>\r\n          <Name>$varId</Name>\r\n         
+    <Value Type=\"@string\">31f16b31-b102-45c9-8ae7-b6db31595b65</Value>\r\n       
+    </Data>\r\n        <Data>\r\n          <Name></Name>\r\n          <Value />\r\n       
+    </Data>\r\n      </Data>\r\n    </Node>\r\n    <Key>cae40cb0-0a02-413b-8f92-59b2135aef20</Key>\r\n   
+    <Node>\r\n      <Id>cae40cb0-0a02-413b-8f92-59b2135aef20</Id>\r\n      <Name>Transition</Name>\r\n     
+    <Comment></Comment>\r\n      <Graph>56e2c9d4-6b2c-4d61-b2ec-db591b42b732</Graph>\r\n     
+    <Parent>$transition</Parent>\r\n      <DebugIndex>-1</DebugIndex>\r\n      <Flags>129</Flags>\r\n     
+    <Position>0|0||0</Position>\r\n      <StaticIn Count=\"3\">\r\n        <Slot>\r\n         
+    <Id>$eventIn</Id>\r\n          <Name>Events</Name>\r\n          <Value />\r\n         
+    <Type>$event</Type>\r\n          <Mode>In</Mode>\r\n          <Flags>0</Flags>\r\n         
+    <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n        <Slot>\r\n         
+    <Id>$decisionIn</Id>\r\n          <Name>Decision</Name>\r\n          <Value />\r\n         
+    <Type>$decision</Type>\r\n          <Mode>In</Mode>\r\n          <Flags>0</Flags>\r\n         
+    <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n        <Slot>\r\n         
+    <Id>Priority</Id>\r\n          <Name>Priority</Name>\r\n          <Value Type=\"@int32\">0</Value>\r\n         
+    <Type>@int32</Type>\r\n          <Mode>In</Mode>\r\n          <Flags>0</Flags>\r\n         
+    <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n      </StaticIn>\r\n      <StaticOut
+    Count=\"0\" />\r\n      <Groups Count=\"0\" />\r\n      <Data Count=\"0\" />\r\n   
+    </Node>\r\n    <Key>df9f9bfb-c959-45dd-9212-63d35e7b91cf</Key>\r\n    <Node>\r\n     
+    <Id>df9f9bfb-c959-45dd-9212-63d35e7b91cf</Id>\r\n      <Name>SetNextWayPoint</Name>\r\n     
+    <Comment></Comment>\r\n      <Graph>09a0a719-5303-4b4c-a52b-c4625faf4e68</Graph>\r\n     
+    <Parent>SetNextWayPoint</Parent>\r\n      <DebugIndex>-1</DebugIndex>\r\n     
+    <Flags>0</Flags>\r\n      <Position>223|91||0</Position>\r\n      <StaticIn Count=\"3\">\r\n       
+    <Slot>\r\n          <Id>$exec</Id>\r\n          <Name></Name>\r\n          <Value
+    />\r\n          <Type>$exec</Type>\r\n          <Mode>In</Mode>\r\n         
+    <Flags>2</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n       
+    <Slot>\r\n          <Id>wayPointIndex</Id>\r\n          <Name>wayPointIndex</Name>\r\n         
+    <Value Type=\"Quantum.AIBlackboardValueKey, quantum.code\">Quantum.AIBlackboardValueKey</Value>\r\n         
+    <Type>Quantum.AIBlackboardValueKey, quantum.code</Type>\r\n          <Mode>In</Mode>\r\n         
+    <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n       
+    <Slot>\r\n          <Id>Label</Id>\r\n          <Name>Label</Name>\r\n         
+    <Value />\r\n          <Type>@string</Type>\r\n          <Mode>In</Mode>\r\n         
+    <Flags>512</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n     
+    </StaticIn>\r\n      <StaticOut Count=\"1\">\r\n        <Slot>\r\n          <Id>$exec</Id>\r\n         
+    <Name></Name>\r\n          <Value />\r\n          <Type>$exec</Type>\r\n         
+    <Mode>Out</Mode>\r\n          <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n       
+    </Slot>\r\n      </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data
+    Count=\"2\">\r\n        <Data>\r\n          <Name>$guid</Name>\r\n          <Value
+    Type=\"@string\">00000000-0000-0000-0000-000000000000</Value>\r\n        </Data>\r\n       
+    <Data>\r\n          <Name>Guid</Name>\r\n          <Value Type=\"System.Int64,
+    mscorlib\">2307849585476873016</Value>\r\n        </Data>\r\n      </Data>\r\n   
     </Node>\r\n    <Key>dfc9a990-c9e3-4745-a056-97d2cb3a057d</Key>\r\n    <Node>\r\n     
-    <Id>dfc9a990-c9e3-4745-a056-97d2cb3a057d</Id>\r\n      <Name>NewState</Name>\r\n     
+    <Id>dfc9a990-c9e3-4745-a056-97d2cb3a057d</Id>\r\n      <Name>Patrol</Name>\r\n     
     <Comment></Comment>\r\n      <Graph>9496fd43-55e2-40af-906c-4327fa36aa05</Graph>\r\n     
     <Parent>$state</Parent>\r\n      <DebugIndex>-1</DebugIndex>\r\n      <Flags>32</Flags>\r\n     
     <Position>0|0||0</Position>\r\n      <StaticIn Count=\"1\">\r\n        <Slot>\r\n         
@@ -66,8 +340,34 @@ MonoBehaviour:
     Count=\"1\">\r\n        <Slot>\r\n          <Id>$out</Id>\r\n          <Name>Out</Name>\r\n         
     <Value />\r\n          <Type>$transition</Type>\r\n          <Mode>Out</Mode>\r\n         
     <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n     
-    </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data Count=\"1\">\r\n       
+    </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data Count=\"2\">\r\n       
     <Data>\r\n          <Name>$default</Name>\r\n          <Value Type=\"@boolean\">True</Value>\r\n       
+    </Data>\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
+    Type=\"System.Int64, mscorlib\">3410429075028676246</Value>\r\n        </Data>\r\n     
+    </Data>\r\n    </Node>\r\n    <Key>e309bdfd-7087-47bc-a874-39c96e1aed1c</Key>\r\n   
+    <Node>\r\n      <Id>e309bdfd-7087-47bc-a874-39c96e1aed1c</Id>\r\n      <Name>PatrolSpeed</Name>\r\n     
+    <Comment></Comment>\r\n      <Graph>17189f56-4119-4c69-bf7b-c911f32383e9</Graph>\r\n     
+    <Parent>$constantRef</Parent>\r\n      <DebugIndex>-1</DebugIndex>\r\n      <Flags>0</Flags>\r\n     
+    <Position>359|92||0</Position>\r\n      <StaticIn Count=\"0\" />\r\n      <StaticOut
+    Count=\"1\">\r\n        <Slot>\r\n          <Id>$value</Id>\r\n          <Name>value</Name>\r\n         
+    <Value />\r\n          <Type>Photon.Deterministic.FP, PhotonDeterministic</Type>\r\n         
+    <Mode>Out</Mode>\r\n          <Flags>2</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n       
+    </Slot>\r\n      </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data
+    Count=\"2\">\r\n        <Data>\r\n          <Name>$varId</Name>\r\n         
+    <Value Type=\"@string\">31f16b31-b102-45c9-8ae7-b6db31595b65</Value>\r\n       
+    </Data>\r\n        <Data>\r\n          <Name></Name>\r\n          <Value />\r\n       
+    </Data>\r\n      </Data>\r\n    </Node>\r\n    <Key>ec74b06f-3f72-4d59-a350-ceb961c3a4b5</Key>\r\n   
+    <Node>\r\n      <Id>ec74b06f-3f72-4d59-a350-ceb961c3a4b5</Id>\r\n      <Name>WaitDuration</Name>\r\n     
+    <Comment></Comment>\r\n      <Graph>56e2c9d4-6b2c-4d61-b2ec-db591b42b732</Graph>\r\n     
+    <Parent>$constantRef</Parent>\r\n      <DebugIndex>-1</DebugIndex>\r\n      <Flags>0</Flags>\r\n     
+    <Position>-364|13||0</Position>\r\n      <StaticIn Count=\"0\" />\r\n      <StaticOut
+    Count=\"1\">\r\n        <Slot>\r\n          <Id>$value</Id>\r\n          <Name>value</Name>\r\n         
+    <Value />\r\n          <Type>Photon.Deterministic.FP, PhotonDeterministic</Type>\r\n         
+    <Mode>Out</Mode>\r\n          <Flags>2</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n       
+    </Slot>\r\n      </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data
+    Count=\"2\">\r\n        <Data>\r\n          <Name>$varId</Name>\r\n         
+    <Value Type=\"@string\">46f5bb02-0423-4938-b61f-a54c551a0321</Value>\r\n       
+    </Data>\r\n        <Data>\r\n          <Name></Name>\r\n          <Value />\r\n       
     </Data>\r\n      </Data>\r\n    </Node>\r\n    <Key>ff7c4779-3455-44b8-9d25-3b97550cdeb6</Key>\r\n   
     <Node>\r\n      <Id>ff7c4779-3455-44b8-9d25-3b97550cdeb6</Id>\r\n      <Name>BlackboardVar</Name>\r\n     
     <Comment></Comment>\r\n      <Graph>9496fd43-55e2-40af-906c-4327fa36aa05</Graph>\r\n     
@@ -85,22 +385,74 @@ MonoBehaviour:
     <Name>$varId</Name>\r\n          <Value Type=\"@string\">9099544e-c8b8-436f-a700-4c8a98e0f419</Value>\r\n       
     </Data>\r\n        <Data>\r\n          <Name></Name>\r\n          <Value />\r\n       
     </Data>\r\n      </Data>\r\n    </Node>\r\n  </Nodes>\r\n  <Types Count=\"0\"
-    />\r\n  <Links Count=\"1\">\r\n    <Link>\r\n      <Id>f8c9460f-f9a9-4b88-9451-da85b39fc53a</Id>\r\n     
-    <FromNode>7beb4ec5-d5af-4c0a-8854-05c2453940ca</FromNode>\r\n      <FromSlot>$update</FromSlot>\r\n     
-    <ToNode>1012d451-0d4d-450c-8854-6f7572e68de1</ToNode>\r\n      <ToSlot>$exec</ToSlot>\r\n     
-    <Flags>4</Flags>\r\n      <DebugIndex>-1</DebugIndex>\r\n    </Link>\r\n  </Links>\r\n 
-    <Data Count=\"0\" />\r\n  <PanelData Count=\"1\">\r\n    <Key>$statemachine/$blackboard/$variables</Key>\r\n   
-    <PanelData>\r\n      <Id>$statemachine/$blackboard/$variables</Id>\r\n      <Expanded>true</Expanded>\r\n   
-    </PanelData>\r\n  </PanelData>\r\n  <GraphData Count=\"2\">\r\n    <Key>9496fd43-55e2-40af-906c-4327fa36aa05</Key>\r\n   
-    <GraphData>\r\n      <Id>9496fd43-55e2-40af-906c-4327fa36aa05</Id>\r\n      <ZoomLevel>1</ZoomLevel>\r\n     
-    <ZoomOffset>0|0||0</ZoomOffset>\r\n      <PanOffset>311|200||0</PanOffset>\r\n   
+    />\r\n  <Links Count=\"12\">\r\n    <Link>\r\n      <Id>5642433e-b0e2-4233-9a95-af041745b296</Id>\r\n     
+    <FromNode>9fd167f0-b6a4-4c07-8e3f-f1867e3dc51d</FromNode>\r\n      <FromSlot>$keyOut</FromSlot>\r\n     
+    <ToNode>99a6ad3e-b80d-4b56-bbd6-30b6269f368b</ToNode>\r\n      <ToSlot>CurrentWayPointIndex</ToSlot>\r\n     
+    <Flags>4</Flags>\r\n      <DebugIndex>-1</DebugIndex>\r\n    </Link>\r\n    <Link>\r\n     
+    <Id>325e12c9-a445-482c-ad82-c3bebb0e9991</Id>\r\n      <FromNode>17c2ed90-b336-4c2d-98e4-93cc97575587</FromNode>\r\n     
+    <FromSlot>$keyOut</FromSlot>\r\n      <ToNode>bd092e75-b1a1-4c79-a467-e4b1d9ea156f</ToNode>\r\n     
+    <ToSlot>wayPointIndex</ToSlot>\r\n      <Flags>4</Flags>\r\n      <DebugIndex>-1</DebugIndex>\r\n   
+    </Link>\r\n    <Link>\r\n      <Id>a1135c56-a2fa-4bae-8f04-c1cc75304fe6</Id>\r\n     
+    <FromNode>ec74b06f-3f72-4d59-a350-ceb961c3a4b5</FromNode>\r\n      <FromSlot>$value</FromSlot>\r\n     
+    <ToNode>28e7a5e9-47d7-4cf0-8d4d-282d5b7bb32f</ToNode>\r\n      <ToSlot>TimeToTrueState</ToSlot>\r\n     
+    <Flags>4</Flags>\r\n      <DebugIndex>-1</DebugIndex>\r\n    </Link>\r\n    <Link>\r\n     
+    <Id>0415f89c-7655-4041-9253-e43c86edf1b8</Id>\r\n      <FromNode>28e7a5e9-47d7-4cf0-8d4d-282d5b7bb32f</FromNode>\r\n     
+    <FromSlot>$decisionOut</FromSlot>\r\n      <ToNode>cae40cb0-0a02-413b-8f92-59b2135aef20</ToNode>\r\n     
+    <ToSlot>$decisionIn</ToSlot>\r\n      <Flags>4</Flags>\r\n      <DebugIndex>-1</DebugIndex>\r\n   
+    </Link>\r\n    <Link>\r\n      <Id>56e2c9d4-6b2c-4d61-b2ec-db591b42b732</Id>\r\n     
+    <FromNode>09a0a719-5303-4b4c-a52b-c4625faf4e68</FromNode>\r\n      <FromSlot>$out</FromSlot>\r\n     
+    <ToNode>17189f56-4119-4c69-bf7b-c911f32383e9</ToNode>\r\n      <ToSlot>$in</ToSlot>\r\n     
+    <Flags>6</Flags>\r\n      <DebugIndex>-1</DebugIndex>\r\n    </Link>\r\n    <Link>\r\n     
+    <Id>b6381cac-e97e-4ef3-a9aa-535a4b8468f3</Id>\r\n      <FromNode>0ed53ac4-3882-4057-9dd4-5fd04ed174d9</FromNode>\r\n     
+    <FromSlot>$keyOut</FromSlot>\r\n      <ToNode>df9f9bfb-c959-45dd-9212-63d35e7b91cf</ToNode>\r\n     
+    <ToSlot>wayPointIndex</ToSlot>\r\n      <Flags>4</Flags>\r\n      <DebugIndex>-1</DebugIndex>\r\n   
+    </Link>\r\n    <Link>\r\n      <Id>f0c97847-a58e-497e-a995-2edc5f4fcf38</Id>\r\n     
+    <FromNode>8565e65e-daea-4020-a01c-6bfce906cddc</FromNode>\r\n      <FromSlot>$exit</FromSlot>\r\n     
+    <ToNode>df9f9bfb-c959-45dd-9212-63d35e7b91cf</ToNode>\r\n      <ToSlot>$exec</ToSlot>\r\n     
+    <Flags>4</Flags>\r\n      <DebugIndex>-1</DebugIndex>\r\n    </Link>\r\n    <Link>\r\n     
+    <Id>439b610b-c597-449a-8e3f-3a58ad619332</Id>\r\n      <FromNode>8565e65e-daea-4020-a01c-6bfce906cddc</FromNode>\r\n     
+    <FromSlot>$update</FromSlot>\r\n      <ToNode>bae117f3-ed7e-4d54-bb8e-4c16f6cb0ecd</ToNode>\r\n     
+    <ToSlot>$exec</ToSlot>\r\n      <Flags>4</Flags>\r\n      <DebugIndex>-1</DebugIndex>\r\n   
+    </Link>\r\n    <Link>\r\n      <Id>bba3cce4-5488-4b62-874b-aed77cc32f88</Id>\r\n     
+    <FromNode>99a6ad3e-b80d-4b56-bbd6-30b6269f368b</FromNode>\r\n      <FromSlot>$decisionOut</FromSlot>\r\n     
+    <ToNode>3165a393-9cd9-4b85-92d9-a86a4b208603</ToNode>\r\n      <ToSlot>$decisionIn</ToSlot>\r\n     
+    <Flags>4</Flags>\r\n      <DebugIndex>-1</DebugIndex>\r\n    </Link>\r\n    <Link>\r\n     
+    <Id>52162478-6642-4cb8-9076-88e71aae3ce6</Id>\r\n      <FromNode>17189f56-4119-4c69-bf7b-c911f32383e9</FromNode>\r\n     
+    <FromSlot>$out0</FromSlot>\r\n      <ToNode>09a0a719-5303-4b4c-a52b-c4625faf4e68</ToNode>\r\n     
+    <ToSlot>$in</ToSlot>\r\n      <Flags>6</Flags>\r\n      <DebugIndex>-1</DebugIndex>\r\n   
+    </Link>\r\n    <Link>\r\n      <Id>34a25cb4-b19e-42dd-ae84-a4e50be01bfe</Id>\r\n     
+    <FromNode>6cd40a97-e490-4a69-ab66-5c41b2fdce2e</FromNode>\r\n      <FromSlot>$update</FromSlot>\r\n     
+    <ToNode>bd092e75-b1a1-4c79-a467-e4b1d9ea156f</ToNode>\r\n      <ToSlot>$exec</ToSlot>\r\n     
+    <Flags>4</Flags>\r\n      <DebugIndex>-1</DebugIndex>\r\n    </Link>\r\n    <Link>\r\n     
+    <Id>280730d4-0e46-4c68-9f6b-e3a11e115340</Id>\r\n      <FromNode>e309bdfd-7087-47bc-a874-39c96e1aed1c</FromNode>\r\n     
+    <FromSlot>$value</FromSlot>\r\n      <ToNode>bd092e75-b1a1-4c79-a467-e4b1d9ea156f</ToNode>\r\n     
+    <ToSlot>speed</ToSlot>\r\n      <Flags>4</Flags>\r\n      <DebugIndex>-1</DebugIndex>\r\n   
+    </Link>\r\n  </Links>\r\n  <Data Count=\"0\" />\r\n  <PanelData Count=\"2\">\r\n   
+    <Key>$statemachine/$blackboard/$variables</Key>\r\n    <PanelData>\r\n      <Id>$statemachine/$blackboard/$variables</Id>\r\n     
+    <Expanded>true</Expanded>\r\n    </PanelData>\r\n    <Key>$statemachine/$constant</Key>\r\n   
+    <PanelData>\r\n      <Id>$statemachine/$constant</Id>\r\n      <Expanded>true</Expanded>\r\n   
+    </PanelData>\r\n  </PanelData>\r\n  <GraphData Count=\"6\">\r\n    <Key>09a0a719-5303-4b4c-a52b-c4625faf4e68</Key>\r\n   
+    <GraphData>\r\n      <Id>09a0a719-5303-4b4c-a52b-c4625faf4e68</Id>\r\n      <ZoomLevel>1</ZoomLevel>\r\n     
+    <ZoomOffset>0|0||0</ZoomOffset>\r\n      <PanOffset>29|127||0</PanOffset>\r\n   
+    </GraphData>\r\n    <Key>17189f56-4119-4c69-bf7b-c911f32383e9</Key>\r\n    <GraphData>\r\n     
+    <Id>17189f56-4119-4c69-bf7b-c911f32383e9</Id>\r\n      <ZoomLevel>0.76</ZoomLevel>\r\n     
+    <ZoomOffset>95|53||0</ZoomOffset>\r\n      <PanOffset>-237|26||0</PanOffset>\r\n   
+    </GraphData>\r\n    <Key>52162478-6642-4cb8-9076-88e71aae3ce6</Key>\r\n    <GraphData>\r\n     
+    <Id>52162478-6642-4cb8-9076-88e71aae3ce6</Id>\r\n      <ZoomLevel>0.76</ZoomLevel>\r\n     
+    <ZoomOffset>83|64||0</ZoomOffset>\r\n      <PanOffset>471|132||0</PanOffset>\r\n   
+    </GraphData>\r\n    <Key>56e2c9d4-6b2c-4d61-b2ec-db591b42b732</Key>\r\n    <GraphData>\r\n     
+    <Id>56e2c9d4-6b2c-4d61-b2ec-db591b42b732</Id>\r\n      <ZoomLevel>1</ZoomLevel>\r\n     
+    <ZoomOffset>0|0||0</ZoomOffset>\r\n      <PanOffset>432|148||0</PanOffset>\r\n   
+    </GraphData>\r\n    <Key>9496fd43-55e2-40af-906c-4327fa36aa05</Key>\r\n    <GraphData>\r\n     
+    <Id>9496fd43-55e2-40af-906c-4327fa36aa05</Id>\r\n      <ZoomLevel>1</ZoomLevel>\r\n     
+    <ZoomOffset>0|0||0</ZoomOffset>\r\n      <PanOffset>184|198||0</PanOffset>\r\n   
     </GraphData>\r\n    <Key>dfc9a990-c9e3-4745-a056-97d2cb3a057d</Key>\r\n    <GraphData>\r\n     
-    <Id>dfc9a990-c9e3-4745-a056-97d2cb3a057d</Id>\r\n      <ZoomLevel>1</ZoomLevel>\r\n     
-    <ZoomOffset>0|0||0</ZoomOffset>\r\n      <PanOffset>397|228||0</PanOffset>\r\n   
+    <Id>dfc9a990-c9e3-4745-a056-97d2cb3a057d</Id>\r\n      <ZoomLevel>0.88</ZoomLevel>\r\n     
+    <ZoomOffset>38|26||0</ZoomOffset>\r\n      <PanOffset>-17|259||0</PanOffset>\r\n   
     </GraphData>\r\n  </GraphData>\r\n  <Tracks Count=\"0\" />\r\n</Document>"
   DocumentType: $statemachine
   DocumentId: 9496fd43-55e2-40af-906c-4327fa36aa05
   DocumentNameOverride: 
   History: []
-  LastCompiledHistoryID: 
+  LastCompiledHistoryID: 39cb6ff3-1867-4306-890a-e976c25930f9
   IsOutdated: 0
