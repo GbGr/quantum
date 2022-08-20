@@ -9,14 +9,14 @@ namespace Quantum
 	{
 		public AIParamFP TimeToTrueState = FP._3;
 
-		public override unsafe bool Decide(Frame frame, EntityRef entity)
+		public override unsafe bool Decide(Frame f, EntityRef entity)
 		{
-			var blackboard = frame.Has<AIBlackboardComponent>(entity) ? frame.Get<AIBlackboardComponent>(entity) : default;
+			var blackboard = f.Has<AIBlackboardComponent>(entity) ? f.Get<AIBlackboardComponent>(entity) : default;
 
-			var agent = frame.Unsafe.GetPointer<HFSMAgent>(entity);
-			var aiConfig = agent->GetConfig(frame);
+			var agent = f.Unsafe.GetPointer<HFSMAgent>(entity);
+			var aiConfig = agent->GetConfig(f);
 
-			FP requiredTime = TimeToTrueState.Resolve(frame, entity, &blackboard, aiConfig);
+			FP requiredTime = TimeToTrueState.Resolve(f, entity, &blackboard, aiConfig);
 
 			var hfsmData = &agent->Data;
 			return hfsmData->Time >= requiredTime;

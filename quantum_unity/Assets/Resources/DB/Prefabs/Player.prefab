@@ -319,7 +319,7 @@ MonoBehaviour:
     IsEnabled: 0
     NavMeshAgentConfig:
       Id:
-        Value: 0
+        Value: 2
     InitialTarget:
       IsEnabled: 0
       Target: {fileID: 0}

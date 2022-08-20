@@ -163,6 +163,7 @@
     <Compile Include="FrameContext.User.cs" />
     <Compile Include="Gameplay\AIRunSystem.cs" />
     <Compile Include="Gameplay\BotSpawnSystem.cs" />
+    <Compile Include="Gameplay\CustomNavmeshMovement.cs" />
     <Compile Include="Gameplay\DestroyOnCollisionSystem.cs" />
     <Compile Include="Gameplay\PlayerMovement.cs" />
     <Compile Include="Gameplay\ProcessPlayerFireInput.cs" />
@@ -175,7 +176,9 @@
     <Compile Include="RuntimePlayer.User.cs" />
     <Compile Include="SimulationConfig.User.cs" />
     <Compile Include="SompleBot\Actions\MoveToWayPoint.cs" />
+    <Compile Include="SompleBot\Actions\MoveToWayPointUsingNavmesh.cs" />
     <Compile Include="SompleBot\Actions\SetNextWayPoint.cs" />
+    <Compile Include="SompleBot\Decisions\NavmeshDestinationReached.cs" />
     <Compile Include="SompleBot\Decisions\WayPointReached.cs" />
     <Compile Include="SystemSetup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -101,6 +101,11 @@ MonoBehaviour:
         Id:
           Value: 2036402779927197045
       ResourcePath: DB/CircuitExport/HFSM_Assets/SimpleBot
+    - Path: Resources/DB/CircuitExport/HFSM_Assets/SimpleBot|MoveToWayPointUsingNavmesh_0
+      AssetRef:
+        Id:
+          Value: 2177631672141488352
+      ResourcePath: DB/CircuitExport/HFSM_Assets/SimpleBot
     - Path: Resources/DB/CircuitExport/HFSM_Assets/SimpleBot|SetNextWayPoint_2
       AssetRef:
         Id:
@@ -155,11 +160,6 @@ MonoBehaviour:
       AssetRef:
         Id:
           Value: 4261454104239592746
-      ResourcePath: DB/CircuitExport/HFSM_Assets/SimpleBot
-    - Path: Resources/DB/CircuitExport/HFSM_Assets/SimpleBot|MoveToWayPoint_0
-      AssetRef:
-        Id:
-          Value: 4464863168875327818
       ResourcePath: DB/CircuitExport/HFSM_Assets/SimpleBot
     - Path: Resources/DB/CircuitExport/HFSM_Assets/SimpleBot|MoveToWayPoint_1
       AssetRef:

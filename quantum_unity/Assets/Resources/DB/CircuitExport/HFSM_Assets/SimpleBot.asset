@@ -73,6 +73,26 @@ MonoBehaviour:
       Key: CurrentWayPointIndex
     Radius:
       RawValue: 19660
+--- !u!114 &-1268102832463015227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d6d34422a415e349b9d2cf73bf0aa61, type: 3}
+  m_Name: MoveToWayPointUsingNavmesh_0
+  m_EditorClassIdentifier: 
+  Settings:
+    Identifier:
+      Path: Resources/DB/CircuitExport/HFSM_Assets/SimpleBot|MoveToWayPointUsingNavmesh_0
+      Guid:
+        Value: 2177631672141488352
+    Label: 
+    wayPointIndex:
+      Key: CurrentWayPointIndex
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -95,28 +115,6 @@ MonoBehaviour:
     - Id:
         Value: 3410429075028676246
     EventsNames: []
---- !u!114 &1230051061985379072
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c783b08c33a036945adbf422ac955ff1, type: 3}
-  m_Name: MoveToWayPoint_0
-  m_EditorClassIdentifier: 
-  Settings:
-    Identifier:
-      Path: Resources/DB/CircuitExport/HFSM_Assets/SimpleBot|MoveToWayPoint_0
-      Guid:
-        Value: 4464863168875327818
-    Label: 
-    wayPointIndex:
-      Key: CurrentWayPointIndex
-    speed:
-      RawValue: 3276
 --- !u!114 &2667950479950803983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -205,7 +203,7 @@ MonoBehaviour:
     Label: MoveToWayPoint
     OnUpdateLinks:
     - Id:
-        Value: 4464863168875327818
+        Value: 2177631672141488352
     OnEnterLinks: []
     OnExitLinks: []
     Transitions:

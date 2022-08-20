@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1154807825063716408}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: 0}
+  m_LocalPosition: {x: 0, y: 0.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 697278918160692475}
@@ -219,7 +219,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5747379292803443134}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.44, y: 0.33, z: 0.18}
+  m_LocalPosition: {x: 0.44, y: 1.049, z: 0.18}
   m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children:
   - {fileID: 8723828414477467701}
@@ -291,6 +291,7 @@ GameObject:
   - component: {fileID: 4738575222872274500}
   - component: {fileID: 9101999707766305411}
   - component: {fileID: -3053474490703946106}
+  - component: {fileID: 7292493752846472519}
   m_Layer: 0
   m_Name: EnemyBot
   m_TagString: Untagged
@@ -373,7 +374,7 @@ MonoBehaviour:
         X:
           RawValue: 0
         Y:
-          RawValue: 32768
+          RawValue: 65536
         Z:
           RawValue: 0
       BoxExtents:
@@ -427,10 +428,10 @@ MonoBehaviour:
       _value:
         RawValue: 65536
   NavMeshPathfinder:
-    IsEnabled: 0
+    IsEnabled: 1
     NavMeshAgentConfig:
       Id:
-        Value: 0
+        Value: 2
     InitialTarget:
       IsEnabled: 0
       Target: {fileID: 0}
@@ -448,7 +449,7 @@ MonoBehaviour:
             Value: 0
         Name: 
   NavMeshSteeringAgent:
-    IsEnabled: 0
+    IsEnabled: 1
     MaxSpeed:
       IsEnabled: 0
       Value:
@@ -525,7 +526,7 @@ MonoBehaviour:
       X:
         RawValue: 30408
       Y:
-        RawValue: 21626
+        RawValue: 68747
       Z:
         RawValue: 55050
   FirePoint: {fileID: 8723828414477467701}
@@ -600,6 +601,18 @@ MonoBehaviour:
     Config:
       Id:
         Value: 0
+--- !u!114 &7292493752846472519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7839421217923787454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8ed481819a7e7547a6ae575c1d05189, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &-2722876400732685876
 MonoBehaviour:
   m_ObjectHideFlags: 0

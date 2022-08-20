@@ -43,7 +43,7 @@ MonoBehaviour:
   PredictionAreaColor: {r: 1, g: 0, b: 0, a: 0.25}
   DrawPathfinderRawPath: 0
   DrawPathfinderRawTrianglePath: 0
-  DrawPathfinderFunnel: 0
+  DrawPathfinderFunnel: 1
   DrawNavMeshAgents: 0
   NavMeshAgentColor: {r: 0, g: 1, b: 0, a: 1}
   NavMeshAvoidanceColor: {r: 0, g: 0.5, b: 0, a: 0.5}

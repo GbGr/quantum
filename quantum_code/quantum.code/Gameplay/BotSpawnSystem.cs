@@ -19,7 +19,7 @@ public class BotSpawnSystem : SystemSignalsOnly
         filter.Next(out _, out _, out var spawnTransform);
 
         var botTransform = f.Unsafe.GetPointer<Transform3D>(botEntity);
-        botTransform->Position = new FPVector3(0, 0, 0);
+        botTransform->Position = new FPVector3(-4, 0, -4);
 
         var bbInitializer = f.FindAsset<AIBlackboardInitializer>(BB_INITIALIZER_PATH);
         var bb = f.Unsafe.GetPointer<AIBlackboardComponent>(botEntity);

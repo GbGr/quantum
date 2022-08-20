@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Quantum.Core;
 using Quantum.Gameplay;
 
 namespace Quantum {
@@ -28,6 +29,7 @@ namespace Quantum {
         new ProcessPlayerFireInput(),
         new PlayerMovement(),
         new AIRunSystem(),
+        new CustomNavmeshMovement(),
         
         new ShootingSystem(),
         

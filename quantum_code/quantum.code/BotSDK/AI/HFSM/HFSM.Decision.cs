@@ -11,7 +11,7 @@ namespace Quantum
 
 		// ========== HFSMDecision INTERFACE ==========================================================================
 
-		public virtual Boolean Decide(Frame frame, EntityRef entity)
+		public virtual Boolean Decide(Frame f, EntityRef entity)
 		{
 			return false;
 		}
