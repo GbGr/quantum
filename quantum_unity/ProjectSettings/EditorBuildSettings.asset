@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/ShooterMenu.unity
     guid: 37aa3835fc6df904aa0a41a314f7c346
   - enabled: 1
-    path: Assets/Level_01.unity
+    path: Assets/Scenes/Level_01.unity
     guid: eb6125a740701a64bb7e7a3110e92f55
   - enabled: 1
     path: Assets/Photon/QuantumDemo/Game/Game.unity

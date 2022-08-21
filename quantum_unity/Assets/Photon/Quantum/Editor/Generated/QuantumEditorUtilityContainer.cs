@@ -29,6 +29,7 @@ namespace Quantum.Editor {
     [System.Serializable]
     public partial class KnownObjectsContainer : QuantumEditorUtility.SerializableObjectsContainerBase {
       public MoveToWayPoint[] MoveToWayPoint = {};
+      public MoveToWayPointUsingNavmesh[] MoveToWayPointUsingNavmesh = {};
       public SetNextWayPoint[] SetNextWayPoint = {};
       public WayPointReached[] WayPointReached = {};
       public Quantum.BTSelector[] BTSelector = {};

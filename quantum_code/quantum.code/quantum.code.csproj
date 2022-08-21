@@ -175,6 +175,7 @@
     <Compile Include="RuntimePlayer.User.cs" />
     <Compile Include="SimulationConfig.User.cs" />
     <Compile Include="SompleBot\Actions\MoveToWayPoint.cs" />
+    <Compile Include="SompleBot\Actions\MoveToWayPointUsingNavmesh.cs" />
     <Compile Include="SompleBot\Actions\SetNextWayPoint.cs" />
     <Compile Include="SompleBot\Decisions\WayPointReached.cs" />
     <Compile Include="SystemSetup.cs" />

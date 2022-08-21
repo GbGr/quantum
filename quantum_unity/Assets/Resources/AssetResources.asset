@@ -51,6 +51,11 @@ MonoBehaviour:
         Id:
           Value: 337072439544349976
       ResourcePath: DB/CircuitExport/HFSM_Assets/SimpleBot
+    - Path: Resources/DB/MyLevel/Level_01_map_QuantumNavmesh_data
+      AssetRef:
+        Id:
+          Value: 390242305801272428
+      ResourcePath: DB/MyLevel/Level_01_map_QuantumNavmesh_data
     - Path: Resources/DB/CircuitExport/HFSM_Assets/SimpleBot|Wait_2
       AssetRef:
         Id:
@@ -131,6 +136,16 @@ MonoBehaviour:
         Id:
           Value: 3689982966121486436
       ResourcePath: DB/Configs/Guns/Pistol
+    - Path: Resources/DB/CircuitExport/HFSM_Assets/SimpleBot|MoveToWayPointUsingNavmesh_0
+      AssetRef:
+        Id:
+          Value: 3807912053721356331
+      ResourcePath: DB/CircuitExport/HFSM_Assets/SimpleBot
+    - Path: Resources/DB/MyLevel/Level_01_map_QuantumNavmesh
+      AssetRef:
+        Id:
+          Value: 3855701945528637524
+      ResourcePath: DB/MyLevel/Level_01_map_QuantumNavmesh
     - Path: Resources/DB/Prefabs/Player|EntityView
       AssetRef:
         Id:
@@ -145,11 +160,6 @@ MonoBehaviour:
       AssetRef:
         Id:
           Value: 4261454104239592746
-      ResourcePath: DB/CircuitExport/HFSM_Assets/SimpleBot
-    - Path: Resources/DB/CircuitExport/HFSM_Assets/SimpleBot|MoveToWayPoint_0
-      AssetRef:
-        Id:
-          Value: 4464863168875327818
       ResourcePath: DB/CircuitExport/HFSM_Assets/SimpleBot
     - Path: Resources/DB/CircuitExport/HFSM_Assets/SimpleBot|MoveToWayPoint_1
       AssetRef:
