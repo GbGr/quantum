@@ -163,6 +163,7 @@
     <Compile Include="FrameContext.User.cs" />
     <Compile Include="Gameplay\AIRunSystem.cs" />
     <Compile Include="Gameplay\BotSpawnSystem.cs" />
+    <Compile Include="Gameplay\CustomNavmeshMovementSystem.cs" />
     <Compile Include="Gameplay\DestroyOnCollisionSystem.cs" />
     <Compile Include="Gameplay\PlayerMovement.cs" />
     <Compile Include="Gameplay\ProcessPlayerFireInput.cs" />

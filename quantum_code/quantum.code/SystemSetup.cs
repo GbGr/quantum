@@ -28,6 +28,7 @@ namespace Quantum {
         new ProcessPlayerFireInput(),
         new PlayerMovement(),
         new AIRunSystem(),
+        new CustomNavmeshMovementSystem(),
         
         new ShootingSystem(),
         
